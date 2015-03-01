@@ -1,6 +1,4 @@
-
-'''
-    takes dbpedia class file (a giant JSON file)
+''' takes dbpedia class file (a giant JSON file)
     and splits it into separate, cleaned entity files
 '''
 
@@ -8,38 +6,50 @@ import ijson
 import json
 import time
 
-ontologyprefix = "http://dbpedia.org/ontology/"
-resourceprefix = "http://dbpedia.org/resource/"
+ontologyprefix  = "http:\/\/dbpedia.org\/ontology\/"
+ontologyprefix2 = "http://dbpedia.org/ontology/"
+resourceprefix = "http:\/\/dbpedia.org\/resource\/"
 itemprefix     = "http:\/\/www.w3.org\/1999\/02\/22-rdf-syntax-ns#type"
+itemprefix2    = "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
 
 with open("../data/flatontology.json",'r') as flat:
     ontology = json.load(flat)
 
-def toName(url):
-    return url[len(ontologyprefix):]
+with open("../data/directory.json",'r+') as f:
+    directory = json.load(f)
+
+
 
 def main():
     speciespath = "../data/Species.json"
     splitClassFile(speciespath)
 
+
+
+def toName(url):
+    return url[len(ontologyprefix):]
+
+def toName2(url):
+    return url[len(ontologyprefix2):]
+
 def splitClassFile(classfilepath):
 
     classfile = open(classfilepath,'r')
 
-    count = 0
+    ''' stream of all instances in file '''
     for instance in ijson.items(classfile,'instances.item'):
-        entity = buildEntity(instance)
-        if len(entity['properties']) > 2:
-            print(json.dumps(entity,indent=4))
-        print(entity['ontologies'])
+        if not inDirectory(instance):
+            toEntity(instance)
+
+    classfile.close()
+
+def toEntity(instance):
+    entity = buildEntity(instance)
+    if len(entity['properties']) > 2:
         deepest = getFinestOntology(entity['ontologies'])
-        path = ontology[toName(deepest)]['fullpath']
-        print("DEEPEST:",path)
-        #write(entity,path)
-        #addToDirectory(entity)
-        time.sleep(0.1)
-        count += 1
-        if count >= 10: break
+        path = ontology[toName2(deepest)]['fullpath']
+        write(entity,path)
+        addToDirectory(entity,path)
 
 def buildEntity(instance):
     return { 'url'        : instance.keys()[0],
@@ -52,9 +62,9 @@ def getProperties(instance):
 
     validproperty = lambda key,val: key.startswith(ontologyprefix) \
                                     and not key.endswith("_label") \
-                                    and val != "NULL" \
                                     and key != ontologyprefix + "wikiPageRevisionID" \
-                                    and key != ontologyprefix + "wikiPageID"
+                                    and key != ontologyprefix + "wikiPageID" \
+                                    and val != "NULL"
 
     allprops = instance.values()[0]
     properties = { toName(key) : val for key,val in allprops.iteritems()
@@ -64,19 +74,34 @@ def getProperties(instance):
 def getOntologies(instance):
     ''' construct list of ontology refs in instance '''
     ontologyrefs = instance.values()[0][itemprefix]
-    return [ x for x in ontologyrefs if x.startswith(ontologyprefix) ]
+    return [ x for x in ontologyrefs if x.startswith(ontologyprefix2) ]
 
 def getFinestOntology(refs):
     ''' take list of ontology classes and return deepest one '''
-    getdepth = lambda ref: ontology[toName(ref)]['depth']
+    getdepth = lambda ref: ontology[toName2(ref)]['depth']
     return max(refs,key=getdepth)
 
 def write(entity,path):
     ''' write entity to JSON file at path '''
-    pass
+    name = entity['name'].replace('/','-')
+    fullname = "../data/" + path + entity['name'] + ".json"
+    with open(fullname, 'wb') as fp:
+        json.dump(entity, fp)
+    print "wrote",entity['name'],"...",
 
-def addToDirectory(entity):
+def addToDirectory(entity,path):
     ''' add name and filepath to entity directory '''
-    pass
+    this_entity = entity['url']
+    val = path + entity['name'].replace('/','-') + ".json"
+    directory[this_entity] = val
 
-splitClassFile("../data/Species.json")
+    with open("../data/directory.json",'w+') as f:
+        json.dump(directory, f)
+    print "added to directory"
+
+def inDirectory(instance):
+    instance_name = instance.keys()[0]
+    return instance_name in directory
+
+if __name__ == "__main__":
+    main()
