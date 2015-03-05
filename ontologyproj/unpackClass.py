@@ -11,18 +11,15 @@ ontologyprefix2 = "http://dbpedia.org/ontology/"
 resourceprefix = "http:\/\/dbpedia.org\/resource\/"
 itemprefix     = "http:\/\/www.w3.org\/1999\/02\/22-rdf-syntax-ns#type"
 itemprefix2    = "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
-
 with open("../data/flatontology.json",'r') as flat:
     ontology = json.load(flat)
-
 with open("../data/directory.json",'r+') as f:
     directory = json.load(f)
 
 
-
 def main():
     speciespath = "../data/Species.json"
-    splitClassFile(speciespath)
+    splitClassFile(speciespath,"../data/")
 
 
 
@@ -32,27 +29,26 @@ def toName(url):
 def toName2(url):
     return url[len(ontologyprefix2):]
 
-def splitClassFile(classfilepath):
+def splitClassFile(classfilepath,destination):
 
     classfile = open(classfilepath,'r')
 
     ''' stream of all instances in file '''
     for instance in ijson.items(classfile,'instances.item'):
-        if not inDirectory(instance):
-            toEntity(instance)
+        toEntity(instance,destination)
 
     classfile.close()
 
-def toEntity(instance):
+def toEntity(instance,dest):
     entity = buildEntity(instance)
     if len(entity['properties']) > 2:
         deepest = getFinestOntology(entity['ontologies'])
         path = ontology[toName2(deepest)]['fullpath']
-        write(entity,path)
-        addToDirectory(entity,path)
+        write(entity,dest,path)
+        addToDirectory(entity,dest,path)
 
 def buildEntity(instance):
-    return { 'url'        : instance.keys()[0],
+    return { 'url'        : instance.keys()[0].replace('\\',''),
              'name'       : instance.keys()[0][len(resourceprefix):],
              'properties' : getProperties(instance),
              'ontologies' : getOntologies(instance) }
@@ -81,22 +77,22 @@ def getFinestOntology(refs):
     getdepth = lambda ref: ontology[toName2(ref)]['depth']
     return max(refs,key=getdepth)
 
-def write(entity,path):
+def write(entity,dest,path):
     ''' write entity to JSON file at path '''
-    name = entity['name'].replace('/','-')
-    fullname = "../data/" + path + entity['name'] + ".json"
+    name = entity['name'].replace('\/','-')
+    fullname = dest + path + name + ".json"
     with open(fullname, 'wb') as fp:
         json.dump(entity, fp)
     print "wrote",entity['name'],"...",
 
-def addToDirectory(entity,path):
+def addToDirectory(entity,dest,path):
     ''' add name and filepath to entity directory '''
     this_entity = entity['url']
     val = path + entity['name'].replace('/','-') + ".json"
     directory[this_entity] = val
 
-    with open("../data/directory.json",'w+') as f:
-        json.dump(directory, f)
+    with open(dest+"directory.json",'w+') as f:
+        json.dump(directory, f, indent=4)
     print "added to directory"
 
 def inDirectory(instance):
