@@ -36,7 +36,7 @@ def entities(amount, category):
     for _ in range(amount):
         yield next(g)
 
-def trainAndTestSets(category,trainnum,testnum):
+def sets(category,trainnum,testnum):
     ''' pull random training and testing sets from disk '''
     g = entitygenerator(category)
     trainset = []

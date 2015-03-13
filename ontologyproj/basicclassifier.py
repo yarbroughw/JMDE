@@ -24,7 +24,7 @@ def pipeline():
                    ])
 
 def evalclassifier(trainsize,testsize):
-    trainset,testset = retrieve.trainAndTestSets(trainsize,testsize)
+    trainset,testset = retrieve.sets(trainsize,testsize)
     classifier = train(trainset)
 
     testdata    = list(map(getkeystring, testset))
