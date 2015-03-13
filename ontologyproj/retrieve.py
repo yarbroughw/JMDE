@@ -2,13 +2,18 @@ import sys
 import random
 import ujson
 
-def entitygenerator():
-    ''' generator using directory file to yield random json docs '''
-    counter = 0
+def entitygenerator(category):
+    ''' generator using directory file to yield random json from class '''
 
-    with open("../data/directory.json",'r') as directory:
+    # get path of category from ontology file
+    with open("../data/flatontology.json",'r') as ontology:
+        path = ujson.load(ontology)[category]["fullpath"]
+
+    # load index file from that path
+    with open("../mockdata/" + path + "fileindex.json",'r') as directory:
         filedict = ujson.loads(directory.read())
 
+    # pick random entry in index and return associated object
     while filedict:
         randomkey = random.choice(list(filedict.keys()))
         path = filedict.pop(randomkey)
@@ -18,7 +23,6 @@ def entitygenerator():
             entity = ujson.loads(entityfile.read())
 
         entity["class"] = classname
-        counter += 1
         yield entity
 
 def progress(counter,total):
@@ -26,18 +30,19 @@ def progress(counter,total):
     percentage = int(counter / total * 100)
     return '\r'+str(percentage)+"%"
 
-def entities(amount):
+def entities(amount, category):
     ''' helper function that wraps entity generator '''
-    g = entitygenerator()
+    g = entitygenerator(category)
     for _ in range(amount):
         yield next(g)
 
-def trainAndTestSets(trainnum,testnum):
+def trainAndTestSets(category,trainnum,testnum):
     ''' pull random training and testing sets from disk '''
-    g = entitygenerator()
+    g = entitygenerator(category)
     trainset = []
     testset  = []
 
+    # built trainset while printing out progress percentage
     counter = 0
     for _ in range(trainnum):
         trainset.append(next(g))
@@ -45,6 +50,7 @@ def trainAndTestSets(trainnum,testnum):
         print(progress(counter,trainnum),"of training set loaded",end='')
     print()
 
+    # built testset while printing out progress percentage
     counter = 0
     for _ in range(testnum):
         testset.append(next(g))
