@@ -13,15 +13,6 @@ itemprefix     = "http:\/\/www.w3.org\/1999\/02\/22-rdf-syntax-ns#type"
 itemprefix2    = "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
 with open("../data/flatontology.json",'r') as flat:
     ontology = json.load(flat)
-with open("../data/directory.json",'r+') as f:
-    directory = json.load(f)
-
-
-def main():
-    speciespath = "../data/Species.json"
-    splitClassFile(speciespath,"../data/")
-
-
 
 def toName(url):
     return url[len(ontologyprefix):]
@@ -30,13 +21,10 @@ def toName2(url):
     return url[len(ontologyprefix2):]
 
 def splitClassFile(classfilepath,destination):
-
-    classfile = open(classfilepath,'r')
-
     ''' stream of all instances in file '''
+    classfile = open(classfilepath,'r')
     for instance in ijson.items(classfile,'instances.item'):
         toEntity(instance,destination)
-
     classfile.close()
 
 def toEntity(instance,dest):
@@ -45,7 +33,7 @@ def toEntity(instance,dest):
         deepest = getFinestOntology(entity['ontologies'])
         path = ontology[toName2(deepest)]['fullpath']
         write(entity,dest,path)
-        addToDirectory(entity,dest,path)
+        addToIndexes(entity,dest,path)
 
 def buildEntity(instance):
     return { 'url'        : instance.keys()[0].replace('\\',''),
@@ -85,19 +73,27 @@ def write(entity,dest,path):
         json.dump(entity, fp)
     print "wrote",entity['name'],"...",
 
-def addToDirectory(entity,dest,path):
-    ''' add name and filepath to entity directory '''
+def addToIndexes(entity,dest,path):
+    paths = path.split('/')
+    paths = [ '/'.join(paths[:i+1]) for i,_ in enumerate(paths) ]
+    for p in paths:
+        addToIndex(entity,dest+p,path)
+    print "added to relevant indexes"
+
+def addToIndex(entity,dest,path):
+    ''' add name and filepath to file index at dest '''
     this_entity = entity['url']
     val = path + entity['name'].replace('/','-') + ".json"
-    directory[this_entity] = val
 
-    with open(dest+"directory.json",'w+') as f:
-        json.dump(directory, f, indent=4)
-    print "added to directory"
+    with open(dest+"/fileindex.json",'r') as f:
+        index = json.load(f)
+    index[this_entity] = val
+    with open(dest+"/fileindex.json",'w') as f:
+        json.dump(index, f, indent=4)
 
-def inDirectory(instance):
-    instance_name = instance.keys()[0]
-    return instance_name in directory
+def main():
+    speciespath = "../data/Species.json"
+    splitClassFile(speciespath,"../mockdata/")
 
 if __name__ == "__main__":
     main()
