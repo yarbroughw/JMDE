@@ -20,11 +20,12 @@ def toName(url):
 def toName2(url):
     return url[len(ontologyprefix2):]
 
-def splitClassFile(classfilepath,destination):
+def splitClassFile(classfilepath,destination,skip=1):
     ''' stream of all instances in file '''
     classfile = open(classfilepath,'r')
-    for instance in ijson.items(classfile,'instances.item'):
-        toEntity(instance,destination)
+    for i,instance in zip(itertools.count(),ijson.items(classfile,'instances.item')):
+        if i % skip == 0:
+            toEntity(instance,destination)
     classfile.close()
 
 def toEntity(instance,dest):
