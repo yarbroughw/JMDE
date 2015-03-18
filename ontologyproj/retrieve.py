@@ -7,23 +7,41 @@ def entitygenerator(category):
 
     # get path of category from ontology file
     with open("../data/flatontology.json",'r') as ontology:
-        path = ujson.load(ontology)[category]["fullpath"]
+        category_path = ujson.load(ontology)[category]["fullpath"]
+
+    # get child names of category
+    with open("../data/nestedontology.json",'r') as ontology:
+        tree = ujson.load(ontology)[0]
+
+    childnames = getchildnames(tree,category_path)
 
     # load index file from that path
-    with open("../mockdata/" + path + "fileindex.json",'r') as directory:
+    indexfile = "../mockdata/" + category_path + "fileindex.json"
+    with open(indexfile,'r') as directory:
         filedict = ujson.loads(directory.read())
 
     # pick random entry in index and return associated object
     while filedict:
         randomkey = random.choice(list(filedict.keys()))
         path = filedict.pop(randomkey)
-        classname = path.split('/')[-2]
+        classes = set(path.split('/')[:-1])
 
         with open("../data/" + path, 'r') as entityfile:
             entity = ujson.loads(entityfile.read())
 
-        entity["class"] = classname
+        # class is intersection of entity's classes and subclasses of category
+        entity["class"] = (childnames & classes).pop()
         yield entity
+
+def getchildnames(tree,path):
+    ''' returns names of direct children of category in tree '''
+    path = path.split('/')[:-1]
+    node = tree
+    while path != []:
+        level = path.pop(0)
+        for child in node["children"]:
+            if child["name"] == level: node = child
+    return set([ child["name"] for child in node["children"] ])
 
 def progress(counter,total):
     ''' simple helper function for string of progress '''
