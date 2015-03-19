@@ -26,11 +26,11 @@ def toName2(url):
 def splitClassFile(classfilepath, destination, skip=1):
     ''' stream of all instances in file '''
     classfile = open(classfilepath, 'r')
-    i = 1
+    i = 0
     for instance in ijson.items(classfile, 'instances.item'):
-        if i % skip == 0:
+        if i == 0:
             toEntity(instance, destination)
-        i += 1
+        i = (i + 1) % skip
     classfile.close()
 
 
