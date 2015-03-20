@@ -45,7 +45,6 @@ class Node:
 
 class TreeClassifier:
     def __init__(self, subclass=None):
-        self.pipeline = pipeline()
         self.threshold = 0.05
 
         # make tree from nested ontology
@@ -64,7 +63,7 @@ class TreeClassifier:
 
     def _buildtree(self, json_tree):
         ''' build tree from nested json '''
-        root = Node(json_tree["name"], self.pipeline)
+        root = Node(json_tree["name"], pipeline())
         for child in json_tree["children"]:
             root.children.append(self._buildtree(child))
         return root
@@ -108,4 +107,4 @@ def pipeline():
                      ('clf', MultinomialNB())])
 
 if __name__ == "__main__":
-    tree = TreeClassifier()
+    tree = TreeClassifier("Species")
