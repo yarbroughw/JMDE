@@ -53,31 +53,32 @@ def progress(counter, total):
 
 
 def entities(amount, category):
-    ''' helper function that wraps entity generator '''
+    ''' helper function that wraps entity generator. returns up to <amount>
+        entities (less if no more can be retrieved)
+    '''
     g = entitygenerator(category)
-    for _ in range(amount):
-        yield next(g)
-
+    for i,entity in zip(range(amount),g):
+        if i == amount:
+            return
+        yield entity
 
 def sets(category, trainnum, testnum):
-    ''' pull random training and testing sets from disk '''
-    g = entitygenerator(category)
-    trainset = []
-    testset = []
+    ''' pull random training and testing sets from disk
+        if not enough entities exists at "category",
+        then pull as many as possible and
+    '''
+    total = trainnum + testnum
+    g = entities(total,category)
+    xs = []
 
     # built trainset while printing out progress percentage
     counter = 0
     for _ in range(trainnum):
-        trainset.append(next(g))
+        xs.append(next(g))
         counter += 1
-        print(progress(counter, trainnum), "of training set loaded", end='')
+        print(progress(counter, total), "of training/test sets loaded")
     print()
 
-    # built testset while printing out progress percentage
-    counter = 0
-    for _ in range(testnum):
-        testset.append(next(g))
-        counter += 1
-        print(progress(counter, testnum), "of test set loaded", end='')
+    split_at = int(testnum / total * len(xs) * -1)
 
-    return trainset, testset
+    return xs[:split_at], xs[split_at:]
