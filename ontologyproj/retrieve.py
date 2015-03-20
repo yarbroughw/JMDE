@@ -16,7 +16,7 @@ def entitygenerator(category):
     childnames = getchildnames(tree, category_path)
 
     # load index file from that path
-    indexfile = "../mockdata/" + category_path + "fileindex.json"
+    indexfile = "../data/" + category_path + "fileindex.json"
     with open(indexfile, 'r') as directory:
         filedict = ujson.loads(directory.read())
 
@@ -57,10 +57,11 @@ def entities(amount, category):
         entities (less if no more can be retrieved)
     '''
     g = entitygenerator(category)
-    for i,entity in zip(range(amount),g):
+    for i, entity in zip(range(amount), g):
         if i == amount:
             return
         yield entity
+
 
 def sets(category, trainnum, testnum):
     ''' pull random training and testing sets from disk
@@ -68,13 +69,13 @@ def sets(category, trainnum, testnum):
         then pull as many as possible and
     '''
     total = trainnum + testnum
-    g = entities(total,category)
+    g = entities(total, category)
     xs = []
 
     # built trainset while printing out progress percentage
     counter = 0
-    for _ in range(trainnum):
-        xs.append(next(g))
+    for entity in g:
+        xs.append(entity)
         counter += 1
         print(progress(counter, total), "of training/test sets loaded")
     print()
