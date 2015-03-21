@@ -5,7 +5,7 @@ import json
 import os
 
 
-def makeDirectories(ontologyDict):
+def makedirectories(ontologyDict):
     for value in ontologyDict:
         directory = "../mockdata/" + value["fullpath"]
         print("making directory", directory, " ...", end='')
@@ -14,9 +14,9 @@ def makeDirectories(ontologyDict):
             d = {}
             json.dump(d, indexfile)
         print("done.")
-        makeDirectories(value["children"])
+        makedirectories(value["children"])
 
 with open("../data/nestedontology.json", 'r') as ontologyFile:
     ontology = json.load(ontologyFile)
 
-makeDirectories(ontology)
+makedirectories(ontology)
