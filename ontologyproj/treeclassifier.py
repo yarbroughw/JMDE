@@ -1,5 +1,6 @@
 import json
 import retrieve
+import pickle
 
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
@@ -17,6 +18,7 @@ class Node:
         return self.children != []
 
     def getsets(self, trainnum, testnum):
+        print(self.name, "node gathering sets.")
         trainset, testset = retrieve.sets(self.name, trainnum, testnum)
         self.trainset = trainset
         self.testset = testset
@@ -82,6 +84,7 @@ class TreeClassifier:
             print("Training", node.name)
             node.getsets(trainnum, testnum)
             node.train()
+            node.trainset = []
 
     def predict(self, entity):
         ''' predict downwards in tree from root node '''
@@ -89,6 +92,11 @@ class TreeClassifier:
         while node.hasChildren() and node.confidence(entity) > self.threshold:
             node = node.predict(entity)
         return node.name
+
+
+def dump(tree, filename):
+    with open(filename, 'wb') as f:
+        pickle.dump(tree, f)
 
 
 def features(dataset):
@@ -107,4 +115,7 @@ def pipeline():
                      ('clf', MultinomialNB())])
 
 if __name__ == "__main__":
-    tree = TreeClassifier("Species")
+    tree = TreeClassifier("owl:Thing")
+    print("Tree created with", tree.root.name, "as root.")
+    tree.train(100, 10)
+    dump(tree, "../data/treedump.pkl")
