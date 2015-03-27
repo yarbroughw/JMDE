@@ -94,11 +94,6 @@ class TreeClassifier:
         return node.name
 
 
-def dump(tree, filename):
-    with open(filename, 'wb') as f:
-        pickle.dump(tree, f)
-
-
 def features(dataset):
     getkeystring = lambda x: ' '.join(x["properties"])
     return list(map(getkeystring, dataset))
@@ -114,8 +109,14 @@ def pipeline():
                      ('tfidf', TfidfTransformer()),
                      ('clf', MultinomialNB())])
 
-if __name__ == "__main__":
+
+def dump(trainnum, testnum, filename):
     tree = TreeClassifier("owl:Thing")
     print("Tree created with", tree.root.name, "as root.")
-    tree.train(100, 10)
-    dump(tree, "../data/treedump.pkl")
+    tree.train(trainnum, testnum)
+    with open(filename, 'wb') as f:
+        pickle.dump(tree, f)
+
+
+if __name__ == "__main__":
+    dump(100, 10, "../data/treedump.pkl")
