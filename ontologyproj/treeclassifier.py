@@ -1,6 +1,7 @@
 import json
 import retrieve
 import pickle
+import numpy as np
 
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
@@ -11,11 +12,11 @@ from sklearn.pipeline import Pipeline
 class Node:
     def __init__(self, n, pipeline):
         self.name = n
-        self.children = []
+        self.children = {}
         self.pipeline = pipeline
 
     def hasChildren(self):
-        return self.children != []
+        return self.children != dict()
 
     def getsets(self, trainnum, testnum):
         print(self.name, "node gathering sets.")
@@ -39,10 +40,19 @@ class Node:
         target = labels(self.testset)
         return self.pipeline.score(corpus, target)
 
+    def predict(self, x):
+        ''' take an list of entities and classify them into child nodes '''
+        names = list(map(lambda x: x["name"], x))
+        properties = features(x)
+        predictions = self.pipeline.predict(properties)
+        print(predictions)
+        for docname, category in zip(names, predictions):
+            print(docname, "=>", category)
+
     def confidence(self, entity):
         getkeystring = lambda x: ' '.join(x["properties"])
         vector = getkeystring(entity)
-        return self.pipeline.predict_proba(vector)
+        return np.amax(self.pipeline.predict_proba(vector))
 
 
 class TreeClassifier:
@@ -67,7 +77,7 @@ class TreeClassifier:
         ''' build tree from nested json '''
         root = Node(json_tree["name"], pipeline())
         for child in json_tree["children"]:
-            root.children.append(self._buildtree(child))
+            root.children[child["name"]] = (self._buildtree(child))
         return root
 
     def __iter__(self):
@@ -75,7 +85,7 @@ class TreeClassifier:
         queue = [self.root]
         while queue != []:
             current = queue.pop(0)
-            queue.extend(current.children)
+            queue.extend(list(current.children.values()))
             yield current
 
     def train(self, trainnum, testnum):
@@ -118,5 +128,15 @@ def dump(trainnum, testnum, filename):
         pickle.dump(tree, f)
 
 
+def load(filename):
+    with open(filename, 'rb') as f:
+        tree = pickle.load(f)
+    return tree
+
+
 if __name__ == "__main__":
-    dump(100, 10, "../data/treedump.pkl")
+    tree = TreeClassifier()
+    tree.train(1000, 10)
+    entities = [e for e in retrieve.entities(10, "owl:Thing")]
+    for e in entities:
+        print(e["name"], e["class"], tree.predict(e))
