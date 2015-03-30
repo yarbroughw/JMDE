@@ -30,7 +30,6 @@ b = set([k for k, v in properties.items()])
 classes = a - b
 n = len(classes) - 1
 
-'''
 sparql = SPARQLWrapper("http://dbpedia.org/sparql")
 sparql.setReturnFormat(JSON)
 
@@ -41,7 +40,6 @@ for i, class_ in enumerate(classes):
     properties[class_] = x
     with open("../data/properties.json", 'w') as f:
         json.dump(properties, f)
-'''
 
 props = {}
 for class_ in [k for k, v in properties.items()]:
