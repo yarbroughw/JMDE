@@ -14,6 +14,7 @@ class Node:
         self.name = n
         self.children = {}
         self.pipeline = pipeline
+        self.threshold = 0.05
 
     def hasChildren(self):
         return self.children != dict()
@@ -41,24 +42,27 @@ class Node:
         return self.pipeline.score(corpus, target)
 
     def predict(self, x):
-        ''' take an list of entities and classify them into child nodes '''
-        names = list(map(lambda x: x["name"], x))
-        properties = features(x)
-        predictions = self.pipeline.predict(properties)
-        print(predictions)
-        for docname, category in zip(names, predictions):
-            print(docname, "=>", category)
+        ''' take an entity and classify it into child nodes '''
+        fs = features([x])
+        prediction = {"label": self.pipeline.predict(fs)[0],
+                      "proba": max(self.pipeline.predict_proba(fs)[0])}
+        return prediction
 
     def confidence(self, entity):
         getkeystring = lambda x: ' '.join(x["properties"])
         vector = getkeystring(entity)
         return np.amax(self.pipeline.predict_proba(vector))
 
+    def emptychildren(self):
+        empties = []
+        for name, child in self.children.items():
+            if not hasattr(child.pipeline.steps[0][1], "vocabulary_"):
+                empties.append(name)
+        return empties
+
 
 class TreeClassifier:
     def __init__(self, subclass=None):
-        self.threshold = 0.05
-
         # make tree from nested ontology
         with open("../data/nestedontology.json", 'r') as f:
             ontology = json.load(f)[0]
@@ -95,13 +99,22 @@ class TreeClassifier:
             node.getsets(trainnum, testnum)
             node.train()
             node.trainset = []
+        self.emptynodes = [marked for node in iter(self)
+                           for marked in node.emptychildren()]
 
     def predict(self, entity):
-        ''' predict downwards in tree from root node '''
+        ''' returns predicted classes for entity.
+        predicts downwards in tree from root node
+        '''
         node = self.root
-        while node.hasChildren() and node.confidence(entity) > self.threshold:
-            node = node.predict(entity)
-        return node.name
+        print(entity["name"], "actually is a", entity["fullpath"])
+        while node.hasChildren() and node not in self.emptynodes:
+            prediction = node.predict(entity)
+            if prediction["proba"] < node.threshold:
+                break
+            print(entity["name"], "is a", prediction["label"],
+                  prediction["proba"])
+            node = node.children[prediction["label"]]
 
 
 def features(dataset):
