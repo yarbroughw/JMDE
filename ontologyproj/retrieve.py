@@ -1,5 +1,7 @@
+from __future__ import print_function
 import random
 import ujson
+import os
 
 
 def entitygenerator(category):
@@ -7,7 +9,8 @@ def entitygenerator(category):
 
     # get path of category from ontology file
     with open("../data/flatontology.json", 'r') as ontology:
-        category_path = ujson.load(ontology)[category]["fullpath"]
+        flatontology = ujson.load(ontology)
+        category_path = flatontology[category]["fullpath"]
 
     # get child names of category
     with open("../data/nestedontology.json", 'r') as ontology:
@@ -24,13 +27,14 @@ def entitygenerator(category):
     while filedict:
         randomkey = random.choice(list(filedict.keys()))
         path = filedict.pop(randomkey)
-        classes = set(path.split('/')[:-1])
+        classes = path.split('/')[:-1]
 
         with open("../data/" + path, 'r') as entityfile:
             entity = ujson.loads(entityfile.read())
 
         # class is intersection of entity's classes and subclasses of category
-        entity["class"] = (childnames & classes).pop()
+        entity["class"] = (childnames & set(classes)).pop()
+        entity["fullpath"] = '/'.join(classes)
         yield entity
 
 
@@ -63,6 +67,23 @@ def entities(amount, category):
         yield entity
 
 
+def direct(amount, category):
+    ''' gets entities directly from category, not category's children
+    '''
+    with open("../data/flatontology.json", 'r') as ontology:
+        flatontology = ujson.load(ontology)
+        category_path = flatontology[category]["fullpath"]
+
+    filenames = [f for f in os.listdir("../data/" + category_path)
+                 if f != "fileindex.json"]
+
+    for filename in filenames:
+        with open("../data/" + category_path + filename, 'r') as f:
+            entity = ujson.load(f)
+            entity["class"] = category
+            yield entity
+
+
 def sets(category, trainnum, testnum):
     ''' pull random training and testing sets from disk
         if not enough entities exists at "category",
@@ -77,7 +98,7 @@ def sets(category, trainnum, testnum):
     for entity in g:
         xs.append(entity)
         counter += 1
-        print(progress(counter, total), "of training/test sets loaded")
+        print(progress(counter, total), "of training/test sets loaded", end='')
     print()
 
     split_at = int(testnum / total * len(xs) * -1)
