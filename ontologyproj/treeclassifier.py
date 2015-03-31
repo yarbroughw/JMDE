@@ -54,11 +54,45 @@ class Node:
         return np.amax(self.pipeline.predict_proba(vector))
 
     def emptychildren(self):
+        ''' returns list of untrained children '''
         empties = []
         for name, child in self.children.items():
             if not hasattr(child.pipeline.steps[0][1], "vocabulary_"):
                 empties.append(name)
         return empties
+
+    def trained(self):
+        return hasattr(self.pipeline.steps[0][1], "vocabulary_")
+
+    def distance(self, predicted, label):
+        ''' distance function for optimization of node thresholds.
+        correct classification is a 1, withholded classification is a 0,
+        and misclassification is a -1
+        '''
+        if predicted == label:
+            return 1
+        elif predicted == self.name:
+            return 0
+        else:
+            return -1
+
+    def score(self):
+        # TODO: add files from class
+        entities = retrieve.entities(100, self.name)
+        return sum([self.distance(self.predict(e), e["class"])
+                    for e in entities])
+
+    def learnthreshold(self):
+        self.threshold = 0
+        current = self.score()
+        rightscore = current - 1
+
+        # move right until going right is worse (TODO: debug?)
+        while rightscore > current:
+            self.threshold += 0.05
+            current = rightscore
+            rightscore = self.score()
+        self.threshold -= 0.05
 
 
 class TreeClassifier:
@@ -102,13 +136,17 @@ class TreeClassifier:
         self.emptynodes = [marked for node in iter(self)
                            for marked in node.emptychildren()]
 
+    def learnthresholds(self):
+        for node in iter(self):
+            node.learnthreshold()
+
     def predict(self, entity):
         ''' returns predicted classes for entity.
         predicts downwards in tree from root node
         '''
         node = self.root
         print(entity["name"], "actually is a", entity["fullpath"])
-        while node.hasChildren() and node not in self.emptynodes:
+        while node.hasChildren() and node.trained():
             prediction = node.predict(entity)
             if prediction["proba"] < node.threshold:
                 break
