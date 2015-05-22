@@ -1,2874 +1,2874 @@
 {
     "VolleyballLeague": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/SportsLeague/VolleyballLeague/"
-    }, 
+    },
     "AmericanFootballCoach": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Coach/AmericanFootballCoach/"
-    }, 
+    },
     "HorseRider": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Athlete/HorseRider/"
-    }, 
+    },
     "Gymnast": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Athlete/Gymnast/"
-    }, 
+    },
     "Unknown": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/Unknown/"
-    }, 
+    },
     "ChemicalElement": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/ChemicalSubstance/ChemicalElement/"
-    }, 
+    },
     "ChemicalSubstance": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/ChemicalSubstance/"
-    }, 
+    },
     "Olympics": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Event/SocietalEvent/SportsEvent/Olympics/"
-    }, 
+    },
     "Saint": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Cleric/Saint/"
-    }, 
+    },
     "SnookerPlayer": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Athlete/SnookerPlayer/"
-    }, 
+    },
     "Department": {
-        "depth": 6, 
+        "depth": 6,
         "fullpath": "owl:Thing/Place/PopulatedPlace/Region/AdministrativeRegion/GovernmentalAdministrativeRegion/Department/"
-    }, 
+    },
     "LinkTitle": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/LinkTitle/"
-    }, 
+    },
     "SoccerClubSeason": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/SportsSeason/SportsTeamSeason/SoccerClubSeason/"
-    }, 
+    },
     "TelevisionSeason": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Work/TelevisionSeason/"
-    }, 
+    },
     "MovieDirector": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/MovieDirector/"
-    }, 
+    },
     "Flag": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/Flag/"
-    }, 
+    },
     "Award": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/Award/"
-    }, 
+    },
     "Host": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/TelevisionPersonality/Host/"
-    }, 
+    },
     "Airline": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/Company/Airline/"
-    }, 
+    },
     "CanadianFootballPlayer": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Agent/Person/Athlete/GridironFootballPlayer/CanadianFootballPlayer/"
-    }, 
+    },
     "AmusementParkAttraction": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/AmusementParkAttraction/"
-    }, 
+    },
     "PoliticalParty": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Organisation/PoliticalParty/"
-    }, 
+    },
     "Organ": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Device/Instrument/Organ/"
-    }, 
+    },
     "Garden": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Place/Garden/"
-    }, 
+    },
     "Celebrity": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/Celebrity/"
-    }, 
+    },
     "AutomobileEngine": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Device/AutomobileEngine/"
-    }, 
+    },
     "VicePrimeMinister": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Politician/VicePrimeMinister/"
-    }, 
+    },
     "BaseballLeague": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/SportsLeague/BaseballLeague/"
-    }, 
+    },
     "Athletics": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Activity/Sport/Athletics/"
-    }, 
+    },
     "Magazine": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Work/WrittenWork/PeriodicalLiterature/Magazine/"
-    }, 
+    },
     "RacingDriver": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Agent/Person/Athlete/MotorsportRacer/RacingDriver/"
-    }, 
+    },
     "Polyhedron": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/Polyhedron/"
-    }, 
+    },
     "Ambassador": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/Ambassador/"
-    }, 
+    },
     "Family": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Agent/Family/"
-    }, 
+    },
     "Reference": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Work/WrittenWork/Annotation/Reference/"
-    }, 
+    },
     "foaf:Document": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Work/foaf:Document/"
-    }, 
+    },
     "Tax": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/Tax/"
-    }, 
+    },
     "Competition": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/Competition/"
-    }, 
+    },
     "NetballPlayer": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Athlete/NetballPlayer/"
-    }, 
+    },
     "Station": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Infrastructure/Station/"
-    }, 
+    },
     "ControlledDesignationOfOriginWine": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Food/Beverage/Wine/ControlledDesignationOfOriginWine/"
-    }, 
+    },
     "Ligament": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/AnatomicalStructure/Ligament/"
-    }, 
+    },
     "SpeedwayRider": {
-        "depth": 6, 
+        "depth": 6,
         "fullpath": "owl:Thing/Agent/Person/Athlete/MotorsportRacer/MotorcycleRider/SpeedwayRider/"
-    }, 
+    },
     "UndergroundJournal": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Work/WrittenWork/PeriodicalLiterature/UndergroundJournal/"
-    }, 
+    },
     "SongWriter": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Agent/Person/Artist/Writer/SongWriter/"
-    }, 
+    },
     "HorseRiding": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Activity/Sport/HorseRiding/"
-    }, 
+    },
     "Rower": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Athlete/Rower/"
-    }, 
+    },
     "HandballPlayer": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Athlete/HandballPlayer/"
-    }, 
+    },
     "NoteworthyPartOfBuilding": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/NoteworthyPartOfBuilding/"
-    }, 
+    },
     "SoccerPlayer": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Athlete/SoccerPlayer/"
-    }, 
+    },
     "State": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/PopulatedPlace/State/"
-    }, 
+    },
     "Camera": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Device/Camera/"
-    }, 
+    },
     "RailwayTunnel": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Infrastructure/RouteOfTransportation/RailwayTunnel/"
-    }, 
+    },
     "Farmer": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/Farmer/"
-    }, 
+    },
     "ReligiousBuilding": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Building/ReligiousBuilding/"
-    }, 
+    },
     "Monarch": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/Monarch/"
-    }, 
+    },
     "GaelicGamesPlayer": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Athlete/GaelicGamesPlayer/"
-    }, 
+    },
     "Embryology": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/AnatomicalStructure/Embryology/"
-    }, 
+    },
     "SoapCharacter": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/FictionalCharacter/SoapCharacter/"
-    }, 
+    },
     "VolleyballCoach": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Coach/VolleyballCoach/"
-    }, 
+    },
     "Theatre": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Venue/Theatre/"
-    }, 
+    },
     "PoliticianSpouse": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/PoliticianSpouse/"
-    }, 
+    },
     "Game": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Activity/Game/"
-    }, 
+    },
     "GreenAlga": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Species/Eukaryote/Plant/GreenAlga/"
-    }, 
+    },
     "CyclingRace": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Event/SocietalEvent/SportsEvent/Race/CyclingRace/"
-    }, 
+    },
     "MotorcycleRacingLeague": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/SportsLeague/MotorcycleRacingLeague/"
-    }, 
+    },
     "MotorsportSeason": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/SportsSeason/MotorsportSeason/"
-    }, 
+    },
     "GrandPrix": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Event/SocietalEvent/SportsEvent/GrandPrix/"
-    }, 
+    },
     "Non-ProfitOrganisation": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Organisation/Non-ProfitOrganisation/"
-    }, 
+    },
     "Publisher": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/Company/Publisher/"
-    }, 
+    },
     "PrehistoricalPeriod": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/TimePeriod/PrehistoricalPeriod/"
-    }, 
+    },
     "Mineral": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/ChemicalSubstance/Mineral/"
-    }, 
+    },
     "Professor": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Scientist/Professor/"
-    }, 
+    },
     "PublicService": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/PublicService/"
-    }, 
+    },
     "Taxon": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/TopicalConcept/Taxon/"
-    }, 
+    },
     "Crustacean": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Species/Eukaryote/Animal/Crustacean/"
-    }, 
+    },
     "Marriage": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Event/LifeCycleEvent/PersonalEvent/Marriage/"
-    }, 
+    },
     "MouseGeneLocation": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/GeneLocation/MouseGeneLocation/"
-    }, 
+    },
     "SocietalEvent": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Event/SocietalEvent/"
-    }, 
+    },
     "Planet": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/CelestialBody/Planet/"
-    }, 
+    },
     "Convention": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Event/SocietalEvent/Convention/"
-    }, 
+    },
     "rdf:Property": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/rdf:Property/"
-    }, 
+    },
     "Stream": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Place/NaturalPlace/BodyOfWater/Stream/"
-    }, 
+    },
     "RailwayLine": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Infrastructure/RouteOfTransportation/RailwayLine/"
-    }, 
+    },
     "GolfLeague": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/SportsLeague/GolfLeague/"
-    }, 
+    },
     "skos:OrderedCollection": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/skos:OrderedCollection/"
-    }, 
+    },
     "Dam": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Infrastructure/Dam/"
-    }, 
+    },
     "Amphibian": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Species/Eukaryote/Animal/Amphibian/"
-    }, 
+    },
     "MemberOfParliament": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Politician/MemberOfParliament/"
-    }, 
+    },
     "Religious": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/Religious/"
-    }, 
+    },
     "Continent": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/PopulatedPlace/Continent/"
-    }, 
+    },
     "OverseasDepartment": {
-        "depth": 7, 
+        "depth": 7,
         "fullpath": "owl:Thing/Place/PopulatedPlace/Region/AdministrativeRegion/GovernmentalAdministrativeRegion/Department/OverseasDepartment/"
-    }, 
+    },
     "VideogamesLeague": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/SportsLeague/VideogamesLeague/"
-    }, 
+    },
     "Canal": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Place/NaturalPlace/BodyOfWater/Stream/Canal/"
-    }, 
+    },
     "Mountain": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/NaturalPlace/Mountain/"
-    }, 
+    },
     "HistoricBuilding": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Building/HistoricBuilding/"
-    }, 
+    },
     "Group": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Organisation/Group/"
-    }, 
+    },
     "Parish": {
-        "depth": 6, 
+        "depth": 6,
         "fullpath": "owl:Thing/Place/PopulatedPlace/Region/AdministrativeRegion/ClericalAdministrativeRegion/Parish/"
-    }, 
+    },
     "Abbey": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Place/Abbey/"
-    }, 
+    },
     "WorldHeritageSite": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Place/WorldHeritageSite/"
-    }, 
+    },
     "FictionalCharacter": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/FictionalCharacter/"
-    }, 
+    },
     "Book": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Work/WrittenWork/Book/"
-    }, 
+    },
     "Cardinal": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Cleric/Cardinal/"
-    }, 
+    },
     "Skater": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Athlete/Skater/"
-    }, 
+    },
     "NuclearPowerStation": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Infrastructure/PowerStation/NuclearPowerStation/"
-    }, 
+    },
     "TennisPlayer": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Athlete/TennisPlayer/"
-    }, 
+    },
     "PoliticalFunction": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/PersonFunction/PoliticalFunction/"
-    }, 
+    },
     "ProgrammingLanguage": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Work/Software/ProgrammingLanguage/"
-    }, 
+    },
     "BaseballTeam": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/SportsTeam/BaseballTeam/"
-    }, 
+    },
     "WrestlingEvent": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Event/SocietalEvent/SportsEvent/WrestlingEvent/"
-    }, 
+    },
     "Royalty": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/Royalty/"
-    }, 
+    },
     "FilmFestival": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Event/SocietalEvent/FilmFestival/"
-    }, 
+    },
     "CityDistrict": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Place/PopulatedPlace/Settlement/CityDistrict/"
-    }, 
+    },
     "ProtectedArea": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Place/ProtectedArea/"
-    }, 
+    },
     "Installment": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Work/WrittenWork/Installment/"
-    }, 
+    },
     "TopicalConcept": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/TopicalConcept/"
-    }, 
+    },
     "Weapon": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Device/Weapon/"
-    }, 
+    },
     "Lymph": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/AnatomicalStructure/Lymph/"
-    }, 
+    },
     "Person": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Agent/Person/"
-    }, 
+    },
     "Broadcaster": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Organisation/Broadcaster/"
-    }, 
+    },
     "foaf:Person": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/foaf:Person/"
-    }, 
+    },
     "OfficeHolder": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/OfficeHolder/"
-    }, 
+    },
     "RecordOffice": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/Non-ProfitOrganisation/RecordOffice/"
-    }, 
+    },
     "FloweringPlant": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Species/Eukaryote/Plant/FloweringPlant/"
-    }, 
+    },
     "EthnicGroup": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/EthnicGroup/"
-    }, 
+    },
     "MathematicalConcept": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/TopicalConcept/MathematicalConcept/"
-    }, 
+    },
     "Painting": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Work/Artwork/Painting/"
-    }, 
+    },
     "Cheese": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Food/Cheese/"
-    }, 
+    },
     "Pyramid": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Pyramid/"
-    }, 
+    },
     "Pope": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Cleric/Pope/"
-    }, 
+    },
     "Diocese": {
-        "depth": 6, 
+        "depth": 6,
         "fullpath": "owl:Thing/Place/PopulatedPlace/Region/AdministrativeRegion/ClericalAdministrativeRegion/Diocese/"
-    }, 
+    },
     "VolleyballPlayer": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Athlete/VolleyballPlayer/"
-    }, 
+    },
     "Municipality": {
-        "depth": 6, 
+        "depth": 6,
         "fullpath": "owl:Thing/Place/PopulatedPlace/Region/AdministrativeRegion/GovernmentalAdministrativeRegion/Municipality/"
-    }, 
+    },
     "Library": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/EducationalInstitution/Library/"
-    }, 
+    },
     "Fern": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Species/Eukaryote/Plant/Fern/"
-    }, 
+    },
     "Aristocrat": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/Aristocrat/"
-    }, 
+    },
     "AthleticsPlayer": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Athlete/AthleticsPlayer/"
-    }, 
+    },
     "PersonalEvent": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Event/LifeCycleEvent/PersonalEvent/"
-    }, 
+    },
     "foaf:Image": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/foaf:Image/"
-    }, 
+    },
     "Archive": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Work/CollectionOfValuables/Archive/"
-    }, 
+    },
     "Poem": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Work/WrittenWork/Poem/"
-    }, 
+    },
     "Media": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/Media/"
-    }, 
+    },
     "Altitude": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/Altitude/"
-    }, 
+    },
     "Capital": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Place/PopulatedPlace/Settlement/City/Capital/"
-    }, 
+    },
     "Globularswarm": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Swarm/Globularswarm/"
-    }, 
+    },
     "GolfCourse": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/SportFacility/GolfCourse/"
-    }, 
+    },
     "Enzyme": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Biomolecule/Enzyme/"
-    }, 
+    },
     "VoiceActor": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Agent/Person/Artist/Actor/VoiceActor/"
-    }, 
+    },
     "Poet": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Agent/Person/Artist/Writer/Poet/"
-    }, 
+    },
     "MeanOfTransportation": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/MeanOfTransportation/"
-    }, 
+    },
     "Brewery": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/Company/Brewery/"
-    }, 
+    },
     "BritishRoyalty": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Royalty/BritishRoyalty/"
-    }, 
+    },
     "Noble": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/Noble/"
-    }, 
+    },
     "Parliament": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Organisation/Parliament/"
-    }, 
+    },
     "Cricketer": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Athlete/Cricketer/"
-    }, 
+    },
     "Psychologist": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/Psychologist/"
-    }, 
+    },
     "NaturalPlace": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Place/NaturalPlace/"
-    }, 
+    },
     "Region": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/PopulatedPlace/Region/"
-    }, 
+    },
     "CardGame": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Activity/Game/CardGame/"
-    }, 
+    },
     "WrittenWork": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Work/WrittenWork/"
-    }, 
+    },
     "Locomotive": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/MeanOfTransportation/Locomotive/"
-    }, 
+    },
     "List": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/List/"
-    }, 
+    },
     "Disease": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Medicine/Disease/"
-    }, 
+    },
     "Ocean": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Place/NaturalPlace/BodyOfWater/Ocean/"
-    }, 
+    },
     "ElectionDiagram": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Event/SocietalEvent/Election/ElectionDiagram/"
-    }, 
+    },
     "ClericalAdministrativeRegion": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Place/PopulatedPlace/Region/AdministrativeRegion/ClericalAdministrativeRegion/"
-    }, 
+    },
     "HandballLeague": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/SportsLeague/HandballLeague/"
-    }, 
+    },
     "Model": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/Model/"
-    }, 
+    },
     "BowlingLeague": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/SportsLeague/BowlingLeague/"
-    }, 
+    },
     "OldTerritory": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Place/PopulatedPlace/Territory/OldTerritory/"
-    }, 
+    },
     "Reptile": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Species/Eukaryote/Animal/Reptile/"
-    }, 
+    },
     "ComedyGroup": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/Group/ComedyGroup/"
-    }, 
+    },
     "Economist": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/Economist/"
-    }, 
+    },
     "SportsTeamSeason": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/SportsSeason/SportsTeamSeason/"
-    }, 
+    },
     "DartsPlayer": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Athlete/DartsPlayer/"
-    }, 
+    },
     "Decoration": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Award/Decoration/"
-    }, 
+    },
     "LunarCrater": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Place/NaturalPlace/Crater/LunarCrater/"
-    }, 
+    },
     "File": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Work/Document/File/"
-    }, 
+    },
     "MilitaryStructure": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/MilitaryStructure/"
-    }, 
+    },
     "ReligiousOrganisation": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Organisation/ReligiousOrganisation/"
-    }, 
+    },
     "HumanDevelopmentIndex": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/HumanDevelopmentIndex/"
-    }, 
+    },
     "Film": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Work/Film/"
-    }, 
+    },
     "Instrument": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Device/Instrument/"
-    }, 
+    },
     "GovernmentalAdministrativeRegion": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Place/PopulatedPlace/Region/AdministrativeRegion/GovernmentalAdministrativeRegion/"
-    }, 
+    },
     "Egyptologist": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/Egyptologist/"
-    }, 
+    },
     "BoxingCategory": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Activity/Sport/Boxing/BoxingCategory/"
-    }, 
+    },
     "SnookerWorldRanking": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/SnookerWorldRanking/"
-    }, 
+    },
     "PenaltyShootOut": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/PenaltyShootOut/"
-    }, 
+    },
     "LightNovel": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Work/WrittenWork/Book/Novel/LightNovel/"
-    }, 
+    },
     "MartialArtist": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Athlete/MartialArtist/"
-    }, 
+    },
     "Referee": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/Referee/"
-    }, 
+    },
     "Resume": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Work/WrittenWork/Resume/"
-    }, 
+    },
     "Locality": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/PopulatedPlace/Locality/"
-    }, 
+    },
     "YearInSpaceflight": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/TimePeriod/YearInSpaceflight/"
-    }, 
+    },
     "SpaceStation": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/MeanOfTransportation/SpaceStation/"
-    }, 
+    },
     "OlympicEvent": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Event/SocietalEvent/SportsEvent/Olympics/OlympicEvent/"
-    }, 
+    },
     "Birth": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Event/LifeCycleEvent/PersonalEvent/Birth/"
-    }, 
+    },
     "Judge": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/Judge/"
-    }, 
+    },
     "EurovisionSongContestEntry": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Work/MusicalWork/Song/EurovisionSongContestEntry/"
-    }, 
+    },
     "Vein": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/AnatomicalStructure/Vein/"
-    }, 
+    },
     "Sound": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Work/Document/Sound/"
-    }, 
+    },
     "SpaceShuttle": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/MeanOfTransportation/SpaceShuttle/"
-    }, 
+    },
     "OrganisationMember": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/OrganisationMember/"
-    }, 
+    },
     "PopulatedPlace": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Place/PopulatedPlace/"
-    }, 
+    },
     "GeopoliticalOrganisation": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Organisation/GeopoliticalOrganisation/"
-    }, 
+    },
     "Venue": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Venue/"
-    }, 
+    },
     "MilitaryUnit": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Organisation/MilitaryUnit/"
-    }, 
+    },
     "Architect": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/Architect/"
-    }, 
+    },
     "Tower": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Tower/"
-    }, 
+    },
     "Vodka": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Food/Beverage/Vodka/"
-    }, 
+    },
     "GeologicalPeriod": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/TimePeriod/GeologicalPeriod/"
-    }, 
+    },
     "Curler": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Athlete/Curler/"
-    }, 
+    },
     "TelevisionStation": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/Broadcaster/TelevisionStation/"
-    }, 
+    },
     "BullFighter": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Athlete/BullFighter/"
-    }, 
+    },
     "TennisLeague": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/SportsLeague/TennisLeague/"
-    }, 
+    },
     "Statistic": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/Statistic/"
-    }, 
+    },
     "Intercommunality": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/PopulatedPlace/Intercommunality/"
-    }, 
+    },
     "Mill": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Mill/"
-    }, 
+    },
     "Sport": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Activity/Sport/"
-    }, 
+    },
     "BaseballPlayer": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Athlete/BaseballPlayer/"
-    }, 
+    },
     "OlympicResult": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/SportCompetitionResult/OlympicResult/"
-    }, 
+    },
     "ComicsCharacter": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/FictionalCharacter/ComicsCharacter/"
-    }, 
+    },
     "HistoricalSettlement": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Place/PopulatedPlace/Settlement/HistoricalSettlement/"
-    }, 
+    },
     "WaterRide": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/AmusementParkAttraction/WaterRide/"
-    }, 
+    },
     "Contest": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Competition/Contest/"
-    }, 
+    },
     "TelevisionPersonality": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/TelevisionPersonality/"
-    }, 
+    },
     "Museum": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Building/Museum/"
-    }, 
+    },
     "MilitaryPerson": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/MilitaryPerson/"
-    }, 
+    },
     "BrownDwarf": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/CelestialBody/Star/BrownDwarf/"
-    }, 
+    },
     "Treadmill": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Mill/Treadmill/"
-    }, 
+    },
     "owl:Thing": {
-        "depth": 0, 
+        "depth": 0,
         "fullpath": "owl:Thing/"
-    }, 
+    },
     "Criminal": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/Criminal/"
-    }, 
+    },
     "Type": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/TopicalConcept/Type/"
-    }, 
+    },
     "Archipelago": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/NaturalPlace/Archipelago/"
-    }, 
+    },
     "Satellite": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/Satellite/"
-    }, 
+    },
     "Chancellor": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Politician/Chancellor/"
-    }, 
+    },
     "HistoricalDistrict": {
-        "depth": 7, 
+        "depth": 7,
         "fullpath": "owl:Thing/Place/PopulatedPlace/Region/AdministrativeRegion/GovernmentalAdministrativeRegion/District/HistoricalDistrict/"
-    }, 
+    },
     "BroadcastNetwork": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/Broadcaster/BroadcastNetwork/"
-    }, 
+    },
     "HockeyTeam": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/SportsTeam/HockeyTeam/"
-    }, 
+    },
     "Dancer": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Artist/Dancer/"
-    }, 
+    },
     "Article": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Work/WrittenWork/Article/"
-    }, 
+    },
     "ProtohistoricalPeriod": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/TimePeriod/ProtohistoricalPeriod/"
-    }, 
+    },
     "Cartoon": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Work/Cartoon/"
-    }, 
+    },
     "Motorcycle": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/MeanOfTransportation/Motorcycle/"
-    }, 
+    },
     "Town": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Place/PopulatedPlace/Settlement/Town/"
-    }, 
+    },
     "SportsManager": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/SportsManager/"
-    }, 
+    },
     "MotorsportRacer": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Athlete/MotorsportRacer/"
-    }, 
+    },
     "University": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/EducationalInstitution/University/"
-    }, 
+    },
     "Work": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/Work/"
-    }, 
+    },
     "Dog": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Species/Eukaryote/Animal/Mammal/Dog/"
-    }, 
+    },
     "Drama": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Work/WrittenWork/Drama/"
-    }, 
+    },
     "Senator": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Politician/Senator/"
-    }, 
+    },
     "Linguist": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/Linguist/"
-    }, 
+    },
     "NCAATeamSeason": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/SportsSeason/SportsTeamSeason/NCAATeamSeason/"
-    }, 
+    },
     "BoxingStyle": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Activity/Sport/Boxing/BoxingStyle/"
-    }, 
+    },
     "RallyDriver": {
-        "depth": 6, 
+        "depth": 6,
         "fullpath": "owl:Thing/Agent/Person/Athlete/MotorsportRacer/RacingDriver/RallyDriver/"
-    }, 
+    },
     "HorseTrainer": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/HorseTrainer/"
-    }, 
+    },
     "Tournament": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Event/SocietalEvent/SportsEvent/Tournament/"
-    }, 
+    },
     "PowerStation": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Infrastructure/PowerStation/"
-    }, 
+    },
     "Currency": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/Currency/"
-    }, 
+    },
     "Comedian": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Artist/Comedian/"
-    }, 
+    },
     "SambaSchool": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Organisation/SambaSchool/"
-    }, 
+    },
     "Comic": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Work/WrittenWork/Comic/"
-    }, 
+    },
     "ClericalOrder": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/ReligiousOrganisation/ClericalOrder/"
-    }, 
+    },
     "RouteOfTransportation": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Infrastructure/RouteOfTransportation/"
-    }, 
+    },
     "AustralianRulesFootballPlayer": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Athlete/AustralianRulesFootballPlayer/"
-    }, 
+    },
     "Winery": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/Company/Winery/"
-    }, 
+    },
     "MotorcycleRider": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Agent/Person/Athlete/MotorsportRacer/MotorcycleRider/"
-    }, 
+    },
     "Activity": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/Activity/"
-    }, 
+    },
     "Historian": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/Historian/"
-    }, 
+    },
     "MusicDirector": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Agent/Person/Artist/MusicalArtist/MusicDirector/"
-    }, 
+    },
     "Medicine": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/Medicine/"
-    }, 
+    },
     "AnatomicalStructure": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/AnatomicalStructure/"
-    }, 
+    },
     "Baronet": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Agent/Person/Royalty/BritishRoyalty/Baronet/"
-    }, 
+    },
     "Website": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Work/Website/"
-    }, 
+    },
     "LineOfFashion": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Work/LineOfFashion/"
-    }, 
+    },
     "SportCompetitionResult": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/SportCompetitionResult/"
-    }, 
+    },
     "AustralianFootballTeam": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/SportsTeam/AustralianFootballTeam/"
-    }, 
+    },
     "Lieutenant": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Politician/Lieutenant/"
-    }, 
+    },
     "Aircraft": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/MeanOfTransportation/Aircraft/"
-    }, 
+    },
     "ClubMoss": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Species/Eukaryote/Plant/ClubMoss/"
-    }, 
+    },
     "Desert": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/NaturalPlace/Desert/"
-    }, 
+    },
     "d0:Activity": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/d0:Activity/"
-    }, 
+    },
     "RaceTrack": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/SportFacility/RaceTrack/"
-    }, 
+    },
     "Language": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/Language/"
-    }, 
+    },
     "Database": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Work/Database/"
-    }, 
+    },
     "TelevisionEpisode": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Work/TelevisionEpisode/"
-    }, 
+    },
     "MythologicalFigure": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/MythologicalFigure/"
-    }, 
+    },
     "BusinessPerson": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/BusinessPerson/"
-    }, 
+    },
     "TheologicalConcept": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/TopicalConcept/TheologicalConcept/"
-    }, 
+    },
     "Gene": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Biomolecule/Gene/"
-    }, 
+    },
     "RugbyLeague": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/SportsLeague/RugbyLeague/"
-    }, 
+    },
     "Road": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Infrastructure/RouteOfTransportation/Road/"
-    }, 
+    },
     "TelevisionShow": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Work/TelevisionShow/"
-    }, 
+    },
     "Canoeist": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Athlete/Canoeist/"
-    }, 
+    },
     "FootballMatch": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Event/SocietalEvent/SportsEvent/FootballMatch/"
-    }, 
+    },
     "SoccerTournament": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Event/SocietalEvent/SportsEvent/Tournament/SoccerTournament/"
-    }, 
+    },
     "SportsEvent": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Event/SocietalEvent/SportsEvent/"
-    }, 
+    },
     "PoliticalConcept": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/TopicalConcept/PoliticalConcept/"
-    }, 
+    },
     "Sea": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Place/NaturalPlace/BodyOfWater/Sea/"
-    }, 
+    },
     "SquashPlayer": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Athlete/SquashPlayer/"
-    }, 
+    },
     "Settlement": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/PopulatedPlace/Settlement/"
-    }, 
+    },
     "Galaxy": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/CelestialBody/Galaxy/"
-    }, 
+    },
     "Engineer": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/Engineer/"
-    }, 
+    },
     "MilitaryConflict": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Event/SocietalEvent/MilitaryConflict/"
-    }, 
+    },
     "SumoWrestler": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Agent/Person/Athlete/Wrestler/SumoWrestler/"
-    }, 
+    },
     "Automobile": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/MeanOfTransportation/Automobile/"
-    }, 
+    },
     "PokerPlayer": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Athlete/PokerPlayer/"
-    }, 
+    },
     "Singer": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Agent/Person/Artist/MusicalArtist/Singer/"
-    }, 
+    },
     "TradeUnion": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Organisation/TradeUnion/"
-    }, 
+    },
     "Bullfighter": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/Bullfighter/"
-    }, 
+    },
     "RoadJunction": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Infrastructure/RouteOfTransportation/RoadJunction/"
-    }, 
+    },
     "DistrictWaterBoard": {
-        "depth": 6, 
+        "depth": 6,
         "fullpath": "owl:Thing/Place/PopulatedPlace/Region/AdministrativeRegion/GovernmentalAdministrativeRegion/DistrictWaterBoard/"
-    }, 
+    },
     "HistoricalPeriod": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/TimePeriod/HistoricalPeriod/"
-    }, 
+    },
     "SportsLeague": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Organisation/SportsLeague/"
-    }, 
+    },
     "Food": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/Food/"
-    }, 
+    },
     "Demographics": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/Demographics/"
-    }, 
+    },
     "NascarDriver": {
-        "depth": 6, 
+        "depth": 6,
         "fullpath": "owl:Thing/Agent/Person/Athlete/MotorsportRacer/RacingDriver/NascarDriver/"
-    }, 
+    },
     "Ginkgo": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Species/Eukaryote/Plant/Ginkgo/"
-    }, 
+    },
     "MovingImage": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Work/Document/Image/MovingImage/"
-    }, 
+    },
     "InformationAppliance": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Device/InformationAppliance/"
-    }, 
+    },
     "Genre": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/TopicalConcept/Genre/"
-    }, 
+    },
     "IceHockeyPlayer": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Athlete/IceHockeyPlayer/"
-    }, 
+    },
     "HistoricPlace": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Place/HistoricPlace/"
-    }, 
+    },
     "Bank": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/Company/Bank/"
-    }, 
+    },
     "Legislature": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Organisation/Legislature/"
-    }, 
+    },
     "Openswarm": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Swarm/Openswarm/"
-    }, 
+    },
     "HotSpring": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/NaturalPlace/HotSpring/"
-    }, 
+    },
     "PublicTransitSystem": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Organisation/PublicTransitSystem/"
-    }, 
+    },
     "Cycad": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Species/Eukaryote/Plant/Cycad/"
-    }, 
+    },
     "SportsTeam": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Organisation/SportsTeam/"
-    }, 
+    },
     "Governor": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Politician/Governor/"
-    }, 
+    },
     "Depth": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/Depth/"
-    }, 
+    },
     "Priest": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Cleric/Priest/"
-    }, 
+    },
     "InlineHockeyLeague": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/SportsLeague/InlineHockeyLeague/"
-    }, 
+    },
     "Mollusca": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Species/Eukaryote/Animal/Mollusca/"
-    }, 
+    },
     "Mammal": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Species/Eukaryote/Animal/Mammal/"
-    }, 
+    },
     "Ship": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/MeanOfTransportation/Ship/"
-    }, 
+    },
     "Bone": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/AnatomicalStructure/Bone/"
-    }, 
+    },
     "Bridge": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Infrastructure/RouteOfTransportation/Bridge/"
-    }, 
+    },
     "Lock": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Infrastructure/Lock/"
-    }, 
+    },
     "SolarEclipse": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Event/NaturalEvent/SolarEclipse/"
-    }, 
+    },
     "MovieGenre": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/TopicalConcept/Genre/MovieGenre/"
-    }, 
+    },
     "Chef": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/Chef/"
-    }, 
+    },
     "AcademicJournal": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Work/WrittenWork/PeriodicalLiterature/AcademicJournal/"
-    }, 
+    },
     "Single": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Work/MusicalWork/Single/"
-    }, 
+    },
     "Election": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Event/SocietalEvent/Election/"
-    }, 
+    },
     "Conifer": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Species/Eukaryote/Plant/Conifer/"
-    }, 
+    },
     "Eukaryote": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Species/Eukaryote/"
-    }, 
+    },
     "cidoccrm:E4_Period": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/cidoccrm:E4_Period/"
-    }, 
+    },
     "LacrosseLeague": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/SportsLeague/LacrosseLeague/"
-    }, 
+    },
     "Shrine": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Shrine/"
-    }, 
+    },
     "SpaceMission": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Event/SocietalEvent/SpaceMission/"
-    }, 
+    },
     "SkiResort": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Place/SkiResort/"
-    }, 
+    },
     "CurlingLeague": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/SportsLeague/CurlingLeague/"
-    }, 
+    },
     "Gate": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Gate/"
-    }, 
+    },
     "Document": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Work/Document/"
-    }, 
+    },
     "Province": {
-        "depth": 6, 
+        "depth": 6,
         "fullpath": "owl:Thing/Place/PopulatedPlace/Region/AdministrativeRegion/GovernmentalAdministrativeRegion/Province/"
-    }, 
+    },
     "Infrastructure": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Infrastructure/"
-    }, 
+    },
     "NobelPrize": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Award/NobelPrize/"
-    }, 
+    },
     "Agglomeration": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/PopulatedPlace/Agglomeration/"
-    }, 
+    },
     "CanadianFootballTeam": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/SportsTeam/CanadianFootballTeam/"
-    }, 
+    },
     "AnimangaCharacter": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Agent/Person/FictionalCharacter/ComicsCharacter/AnimangaCharacter/"
-    }, 
+    },
     "Surfer": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Athlete/Surfer/"
-    }, 
+    },
     "UnitOfWork": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/UnitOfWork/"
-    }, 
+    },
     "DocumentType": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/TopicalConcept/Type/DocumentType/"
-    }, 
+    },
     "TennisTournament": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Event/SocietalEvent/SportsEvent/Tournament/TennisTournament/"
-    }, 
+    },
     "BeachVolleyballPlayer": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Agent/Person/Athlete/VolleyballPlayer/BeachVolleyballPlayer/"
-    }, 
+    },
     "NationalFootballLeagueSeason": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/SportsSeason/SportsTeamSeason/FootballLeagueSeason/NationalFootballLeagueSeason/"
-    }, 
+    },
     "DigitalCamera": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Device/Camera/DigitalCamera/"
-    }, 
+    },
     "MouseGene": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Biomolecule/Gene/MouseGene/"
-    }, 
+    },
     "GrossDomesticProduct": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/GrossDomesticProduct/"
-    }, 
+    },
     "LifeCycleEvent": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Event/LifeCycleEvent/"
-    }, 
+    },
     "IceHockeyLeague": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/SportsLeague/IceHockeyLeague/"
-    }, 
+    },
     "Watermill": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Mill/Watermill/"
-    }, 
+    },
     "Muscle": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/AnatomicalStructure/Muscle/"
-    }, 
+    },
     "CountrySeat": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Place/CountrySeat/"
-    }, 
+    },
     "TableTennisPlayer": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Athlete/TableTennisPlayer/"
-    }, 
+    },
     "ShoppingMall": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Building/ShoppingMall/"
-    }, 
+    },
     "Archeologist": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/Archeologist/"
-    }, 
+    },
     "FigureSkater": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Athlete/FigureSkater/"
-    }, 
+    },
     "Agent": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/Agent/"
-    }, 
+    },
     "StatedResolution": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Work/WrittenWork/StatedResolution/"
-    }, 
+    },
     "GrossDomesticProductPerCapita": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/GrossDomesticProductPerCapita/"
-    }, 
+    },
     "Protein": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Biomolecule/Protein/"
-    }, 
+    },
     "MultiVolumePublication": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Work/WrittenWork/MultiVolumePublication/"
-    }, 
+    },
     "PolishKing": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Royalty/PolishKing/"
-    }, 
+    },
     "Arena": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Arena/"
-    }, 
+    },
     "Synagogue": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Building/ReligiousBuilding/Synagogue/"
-    }, 
+    },
     "SportsTeamMember": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/OrganisationMember/SportsTeamMember/"
-    }, 
+    },
     "District": {
-        "depth": 6, 
+        "depth": 6,
         "fullpath": "owl:Thing/Place/PopulatedPlace/Region/AdministrativeRegion/GovernmentalAdministrativeRegion/District/"
-    }, 
+    },
     "Area": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/Area/"
-    }, 
+    },
     "Glacier": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/NaturalPlace/Glacier/"
-    }, 
+    },
     "Hospital": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Building/Hospital/"
-    }, 
+    },
     "Zoo": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Zoo/"
-    }, 
+    },
     "RadioControlledRacingLeague": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/SportsLeague/RadioControlledRacingLeague/"
-    }, 
+    },
     "NaturalRegion": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Place/PopulatedPlace/Region/NaturalRegion/"
-    }, 
+    },
     "ConcentrationCamp": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Place/ConcentrationCamp/"
-    }, 
+    },
     "LegalCase": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/UnitOfWork/Case/LegalCase/"
-    }, 
+    },
     "Humorist": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Artist/Humorist/"
-    }, 
+    },
     "Territory": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/PopulatedPlace/Territory/"
-    }, 
+    },
     "Song": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Work/MusicalWork/Song/"
-    }, 
+    },
     "Arrondissement": {
-        "depth": 6, 
+        "depth": 6,
         "fullpath": "owl:Thing/Place/PopulatedPlace/Region/AdministrativeRegion/GovernmentalAdministrativeRegion/Arrondissement/"
-    }, 
+    },
     "Monastery": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Place/Monastery/"
-    }, 
+    },
     "Park": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Place/Park/"
-    }, 
+    },
     "Bird": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Species/Eukaryote/Animal/Bird/"
-    }, 
+    },
     "TermOfOffice": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Organisation/TermOfOffice/"
-    }, 
+    },
     "BodyOfWater": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/NaturalPlace/BodyOfWater/"
-    }, 
+    },
     "skos:Concept": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/skos:Concept/"
-    }, 
+    },
     "AcademicSubject": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/TopicalConcept/AcademicSubject/"
-    }, 
+    },
     "CricketGround": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/SportFacility/CricketGround/"
-    }, 
+    },
     "Sculptor": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Artist/Sculptor/"
-    }, 
+    },
     "HumanGeneLocation": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/GeneLocation/HumanGeneLocation/"
-    }, 
+    },
     "ClassicalMusicArtist": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Agent/Person/Artist/MusicalArtist/ClassicalMusicArtist/"
-    }, 
+    },
     "Politician": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/Politician/"
-    }, 
+    },
     "Tunnel": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Tunnel/"
-    }, 
+    },
     "PhilosophicalConcept": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/TopicalConcept/PhilosophicalConcept/"
-    }, 
+    },
     "ArchitecturalStructure": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/"
-    }, 
+    },
     "RugbyClub": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/SportsTeam/RugbyClub/"
-    }, 
+    },
     "Race": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Event/SocietalEvent/SportsEvent/Race/"
-    }, 
+    },
     "GridironFootballPlayer": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Athlete/GridironFootballPlayer/"
-    }, 
+    },
     "LiteraryGenre": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/TopicalConcept/Genre/LiteraryGenre/"
-    }, 
+    },
     "FieldHockeyLeague": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/SportsLeague/FieldHockeyLeague/"
-    }, 
+    },
     "AmericanFootballLeague": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/SportsLeague/AmericanFootballLeague/"
-    }, 
+    },
     "AmateurBoxer": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Agent/Person/Athlete/Boxer/AmateurBoxer/"
-    }, 
+    },
     "MusicFestival": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Event/SocietalEvent/MusicFestival/"
-    }, 
+    },
     "Fish": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Species/Eukaryote/Animal/Fish/"
-    }, 
+    },
     "CapitalOfRegion": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Place/PopulatedPlace/Settlement/City/CapitalOfRegion/"
-    }, 
+    },
     "WomensTennisAssociationTournament": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Event/SocietalEvent/SportsEvent/Tournament/WomensTennisAssociationTournament/"
-    }, 
+    },
     "TelevisionHost": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Presenter/TelevisionHost/"
-    }, 
+    },
     "TelevisionDirector": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/TelevisionDirector/"
-    }, 
+    },
     "ChristianBishop": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Cleric/ChristianBishop/"
-    }, 
+    },
     "Lawyer": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/Lawyer/"
-    }, 
+    },
     "RailwayStation": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Infrastructure/Station/RailwayStation/"
-    }, 
+    },
     "BackScene": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Agent/Person/Artist/MusicalArtist/BackScene/"
-    }, 
+    },
     "ComicsCreator": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Artist/ComicsCreator/"
-    }, 
+    },
     "GovernmentAgency": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Organisation/GovernmentAgency/"
-    }, 
+    },
     "FormulaOneRacer": {
-        "depth": 6, 
+        "depth": 6,
         "fullpath": "owl:Thing/Agent/Person/Athlete/MotorsportRacer/RacingDriver/FormulaOneRacer/"
-    }, 
+    },
     "Death": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Event/LifeCycleEvent/PersonalEvent/Death/"
-    }, 
+    },
     "Divorce": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Event/LifeCycleEvent/PersonalEvent/Divorce/"
-    }, 
+    },
     "TheatreDirector": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/TheatreDirector/"
-    }, 
+    },
     "SpeedwayTeam": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/SportsTeam/SpeedwayTeam/"
-    }, 
+    },
     "PaintballLeague": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/SportsLeague/PaintballLeague/"
-    }, 
+    },
     "MotocycleRacer": {
-        "depth": 6, 
+        "depth": 6,
         "fullpath": "owl:Thing/Agent/Person/Athlete/MotorsportRacer/RacingDriver/MotocycleRacer/"
-    }, 
+    },
     "SportsSeason": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/SportsSeason/"
-    }, 
+    },
     "Instrumentalist": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Agent/Person/Artist/MusicalArtist/Instrumentalist/"
-    }, 
+    },
     "Holiday": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/Holiday/"
-    }, 
+    },
     "Temple": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Building/ReligiousBuilding/Temple/"
-    }, 
+    },
     "Skier": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Athlete/Skier/"
-    }, 
+    },
     "Play": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Work/WrittenWork/Play/"
-    }, 
+    },
     "Murderer": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Criminal/Murderer/"
-    }, 
+    },
     "SoccerLeague": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/SportsLeague/SoccerLeague/"
-    }, 
+    },
     "RadioProgram": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Work/RadioProgram/"
-    }, 
+    },
     "Guitar": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Device/Instrument/Guitar/"
-    }, 
+    },
     "RomanEmperor": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/RomanEmperor/"
-    }, 
+    },
     "Train": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/MeanOfTransportation/Train/"
-    }, 
+    },
     "Moss": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Species/Eukaryote/Plant/Moss/"
-    }, 
+    },
     "CollectionOfValuables": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Work/CollectionOfValuables/"
-    }, 
+    },
     "BeautyQueen": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/BeautyQueen/"
-    }, 
+    },
     "SystemOfLaw": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/TopicalConcept/SystemOfLaw/"
-    }, 
+    },
     "Year": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/TimePeriod/Year/"
-    }, 
+    },
     "Deanery": {
-        "depth": 6, 
+        "depth": 6,
         "fullpath": "owl:Thing/Place/PopulatedPlace/Region/AdministrativeRegion/ClericalAdministrativeRegion/Deanery/"
-    }, 
+    },
     "Casino": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Building/Casino/"
-    }, 
+    },
     "AmericanFootballPlayer": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Agent/Person/Athlete/GridironFootballPlayer/AmericanFootballPlayer/"
-    }, 
+    },
     "BoardGame": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Activity/Game/BoardGame/"
-    }, 
+    },
     "SiteOfSpecialScientificInterest": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Place/SiteOfSpecialScientificInterest/"
-    }, 
+    },
     "MixedMartialArtsLeague": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/SportsLeague/MixedMartialArtsLeague/"
-    }, 
+    },
     "Crater": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/NaturalPlace/Crater/"
-    }, 
+    },
     "Sculpture": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Work/Artwork/Sculpture/"
-    }, 
+    },
     "TimePeriod": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/TimePeriod/"
-    }, 
+    },
     "Software": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Work/Software/"
-    }, 
+    },
     "Rocket": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/MeanOfTransportation/Rocket/"
-    }, 
+    },
     "Deputy": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Politician/Deputy/"
-    }, 
+    },
     "ChristianPatriarch": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Cleric/ChristianPatriarch/"
-    }, 
+    },
     "SoccerLeagueSeason": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/SportsSeason/SportsTeamSeason/SoccerLeagueSeason/"
-    }, 
+    },
     "Sales": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/Sales/"
-    }, 
+    },
     "WaterTower": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Tower/WaterTower/"
-    }, 
+    },
     "Spacecraft": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/MeanOfTransportation/Spacecraft/"
-    }, 
+    },
     "Asteroid": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/CelestialBody/Asteroid/"
-    }, 
+    },
     "College": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/EducationalInstitution/College/"
-    }, 
+    },
     "Church": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Building/ReligiousBuilding/Church/"
-    }, 
+    },
     "Constellation": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/CelestialBody/Constellation/"
-    }, 
+    },
     "Album": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Work/MusicalWork/Album/"
-    }, 
+    },
     "City": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Place/PopulatedPlace/Settlement/City/"
-    }, 
+    },
     "Lighthouse": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Tower/Lighthouse/"
-    }, 
+    },
     "Photographer": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Artist/Photographer/"
-    }, 
+    },
     "Factory": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Building/Factory/"
-    }, 
+    },
     "Manhwa": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Work/WrittenWork/Comic/Manhwa/"
-    }, 
+    },
     "PoloLeague": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/SportsLeague/PoloLeague/"
-    }, 
+    },
     "AdministrativeRegion": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Place/PopulatedPlace/Region/AdministrativeRegion/"
-    }, 
+    },
     "Astronaut": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/Astronaut/"
-    }, 
+    },
     "Prison": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Building/Prison/"
-    }, 
+    },
     "ClassicalMusicComposition": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Work/MusicalWork/ClassicalMusicComposition/"
-    }, 
+    },
     "Beach": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/NaturalPlace/Beach/"
-    }, 
+    },
     "ScreenWriter": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Agent/Person/Artist/Writer/ScreenWriter/"
-    }, 
+    },
     "Plant": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Species/Eukaryote/Plant/"
-    }, 
+    },
     "Valley": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/NaturalPlace/Valley/"
-    }, 
+    },
     "Lipid": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Biomolecule/Lipid/"
-    }, 
+    },
     "CyclingCompetition": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Event/SocietalEvent/SportsEvent/CyclingCompetition/"
-    }, 
+    },
     "VicePresident": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Politician/VicePresident/"
-    }, 
+    },
     "SerialKiller": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Criminal/SerialKiller/"
-    }, 
+    },
     "PersonFunction": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/PersonFunction/"
-    }, 
+    },
     "MemberResistanceMovement": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/MemberResistanceMovement/"
-    }, 
+    },
     "President": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Politician/President/"
-    }, 
+    },
     "MusicalWork": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Work/MusicalWork/"
-    }, 
+    },
     "AustralianFootballLeague": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/SportsLeague/AustralianFootballLeague/"
-    }, 
+    },
     "Colour": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/Colour/"
-    }, 
+    },
     "AmericanFootballTeam": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/SportsTeam/AmericanFootballTeam/"
-    }, 
+    },
     "Cyclist": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Athlete/Cyclist/"
-    }, 
+    },
     "HistoricalCountry": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Place/PopulatedPlace/Country/HistoricalCountry/"
-    }, 
+    },
     "ArtificialSatellite": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Satellite/ArtificialSatellite/"
-    }, 
+    },
     "FashionDesigner": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Artist/FashionDesigner/"
-    }, 
+    },
     "Airport": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Infrastructure/Airport/"
-    }, 
+    },
     "gml:_Feature": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/gml:_Feature/"
-    }, 
+    },
     "HistoricalProvince": {
-        "depth": 7, 
+        "depth": 7,
         "fullpath": "owl:Thing/Place/PopulatedPlace/Region/AdministrativeRegion/GovernmentalAdministrativeRegion/Province/HistoricalProvince/"
-    }, 
+    },
     "Gnetophytes": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Species/Eukaryote/Plant/Gnetophytes/"
-    }, 
+    },
     "MusicGenre": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/TopicalConcept/Genre/MusicGenre/"
-    }, 
+    },
     "SupremeCourtOfTheUnitedStatesCase": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/UnitOfWork/Case/LegalCase/SupremeCourtOfTheUnitedStatesCase/"
-    }, 
+    },
     "Manga": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Work/WrittenWork/Comic/Manga/"
-    }, 
+    },
     "Medician": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Scientist/Medician/"
-    }, 
+    },
     "GeneLocation": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/GeneLocation/"
-    }, 
+    },
     "MountainPass": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/NaturalPlace/MountainPass/"
-    }, 
+    },
     "SoccerClub": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/SportsTeam/SoccerClub/"
-    }, 
+    },
     "TrackList": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/List/TrackList/"
-    }, 
+    },
     "Mine": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Place/Mine/"
-    }, 
+    },
     "NationalAnthem": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Work/MusicalWork/NationalAnthem/"
-    }, 
+    },
     "Arachnid": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Species/Eukaryote/Animal/Arachnid/"
-    }, 
+    },
     "ScientificConcept": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/TopicalConcept/ScientificConcept/"
-    }, 
+    },
     "CyclingLeague": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/SportsLeague/CyclingLeague/"
-    }, 
+    },
     "Port": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Infrastructure/Port/"
-    }, 
+    },
     "Atoll": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Place/PopulatedPlace/Island/Atoll/"
-    }, 
+    },
     "GatedCommunity": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/PopulatedPlace/GatedCommunity/"
-    }, 
+    },
     "Memorial": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/Monument/Memorial/"
-    }, 
+    },
     "HollywoodCartoon": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Work/Cartoon/HollywoodCartoon/"
-    }, 
+    },
     "CollegeCoach": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Coach/CollegeCoach/"
-    }, 
+    },
     "WindMotor": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Mill/WindMotor/"
-    }, 
+    },
     "VideoGame": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Work/Software/VideoGame/"
-    }, 
+    },
     "PeriodicalLiterature": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Work/WrittenWork/PeriodicalLiterature/"
-    }, 
+    },
     "Entomologist": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Scientist/Entomologist/"
-    }, 
+    },
     "Manhua": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Work/WrittenWork/Comic/Manhua/"
-    }, 
+    },
     "FootballLeagueSeason": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/SportsSeason/SportsTeamSeason/FootballLeagueSeason/"
-    }, 
+    },
     "SkiArea": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Place/SkiArea/"
-    }, 
+    },
     "Band": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/Group/Band/"
-    }, 
+    },
     "ComicStrip": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Work/WrittenWork/Comic/ComicStrip/"
-    }, 
+    },
     "Company": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Organisation/Company/"
-    }, 
+    },
     "LawFirm": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/Company/LawFirm/"
-    }, 
+    },
     "Annotation": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Work/WrittenWork/Annotation/"
-    }, 
+    },
     "Building": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Building/"
-    }, 
+    },
     "Restaurant": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Building/Restaurant/"
-    }, 
+    },
     "Island": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/PopulatedPlace/Island/"
-    }, 
+    },
     "Athlete": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/Athlete/"
-    }, 
+    },
     "EducationalInstitution": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Organisation/EducationalInstitution/"
-    }, 
+    },
     "Drug": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/Drug/"
-    }, 
+    },
     "CricketLeague": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/SportsLeague/CricketLeague/"
-    }, 
+    },
     "Project": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/UnitOfWork/Project/"
-    }, 
+    },
     "LacrossePlayer": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Athlete/LacrossePlayer/"
-    }, 
+    },
     "RoadTunnel": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Infrastructure/RouteOfTransportation/RoadTunnel/"
-    }, 
+    },
     "Newspaper": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Work/WrittenWork/PeriodicalLiterature/Newspaper/"
-    }, 
+    },
     "Volcano": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/NaturalPlace/Volcano/"
-    }, 
+    },
     "RugbyPlayer": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Athlete/RugbyPlayer/"
-    }, 
+    },
     "Wine": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Food/Beverage/Wine/"
-    }, 
+    },
     "Fashion": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/TopicalConcept/Fashion/"
-    }, 
+    },
     "Biomolecule": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/Biomolecule/"
-    }, 
+    },
     "Producer": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/Producer/"
-    }, 
+    },
     "BiologicalDatabase": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Work/Database/BiologicalDatabase/"
-    }, 
+    },
     "ArtisticGenre": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/TopicalConcept/Genre/ArtisticGenre/"
-    }, 
+    },
     "Profession": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/PersonFunction/Profession/"
-    }, 
+    },
     "DisneyCharacter": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/FictionalCharacter/DisneyCharacter/"
-    }, 
+    },
     "NationalFootballLeagueEvent": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Event/SocietalEvent/SportsEvent/NationalFootballLeagueEvent/"
-    }, 
+    },
     "WineRegion": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Place/WineRegion/"
-    }, 
+    },
     "Species": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/Species/"
-    }, 
+    },
     "Case": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/UnitOfWork/Case/"
-    }, 
+    },
     "Animal": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Species/Eukaryote/Animal/"
-    }, 
+    },
     "Cave": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/NaturalPlace/Cave/"
-    }, 
+    },
     "SnookerChamp": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Agent/Person/Athlete/SnookerPlayer/SnookerChamp/"
-    }, 
+    },
     "Guitarist": {
-        "depth": 6, 
+        "depth": 6,
         "fullpath": "owl:Thing/Agent/Person/Artist/MusicalArtist/Instrumentalist/Guitarist/"
-    }, 
+    },
     "Mosque": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Building/ReligiousBuilding/Mosque/"
-    }, 
+    },
     "Actor": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Artist/Actor/"
-    }, 
+    },
     "Rebellion": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Event/SocietalEvent/Rebellion/"
-    }, 
+    },
     "Beer": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Food/Beverage/Beer/"
-    }, 
+    },
     "SoftballLeague": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/SportsLeague/SoftballLeague/"
-    }, 
+    },
     "Fencer": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Athlete/Fencer/"
-    }, 
+    },
     "StillImage": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Work/Document/Image/StillImage/"
-    }, 
+    },
     "GivenName": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Name/GivenName/"
-    }, 
+    },
     "TeamMember": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Athlete/TeamMember/"
-    }, 
+    },
     "Artist": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/Artist/"
-    }, 
+    },
     "ArtistDiscography": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Work/MusicalWork/ArtistDiscography/"
-    }, 
+    },
     "CanadianFootballLeague": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/SportsLeague/CanadianFootballLeague/"
-    }, 
+    },
     "StormSurge": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Event/NaturalEvent/StormSurge/"
-    }, 
+    },
     "MusicalArtist": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Artist/MusicalArtist/"
-    }, 
+    },
     "Community": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Place/Community/"
-    }, 
+    },
     "GovernmentType": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/TopicalConcept/Type/GovernmentType/"
-    }, 
+    },
     "BasketballLeague": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/SportsLeague/BasketballLeague/"
-    }, 
+    },
     "Population": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/Population/"
-    }, 
+    },
     "SubMunicipality": {
-        "depth": 6, 
+        "depth": 6,
         "fullpath": "owl:Thing/Place/PopulatedPlace/Region/AdministrativeRegion/GovernmentalAdministrativeRegion/SubMunicipality/"
-    }, 
+    },
     "School": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/EducationalInstitution/School/"
-    }, 
+    },
     "RaceHorse": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Species/Eukaryote/Animal/Mammal/RaceHorse/"
-    }, 
+    },
     "BasketballTeam": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/SportsTeam/BasketballTeam/"
-    }, 
+    },
     "NarutoCharacter": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/FictionalCharacter/NarutoCharacter/"
-    }, 
+    },
     "EmployersOrganisation": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Organisation/EmployersOrganisation/"
-    }, 
+    },
     "BasketballPlayer": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Athlete/BasketballPlayer/"
-    }, 
+    },
     "NationalCollegiateAthleticAssociationAthlete": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Athlete/NationalCollegiateAthleticAssociationAthlete/"
-    }, 
+    },
     "Place": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/Place/"
-    }, 
+    },
     "Anime": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Work/Cartoon/Anime/"
-    }, 
+    },
     "Wrestler": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Athlete/Wrestler/"
-    }, 
+    },
     "Star": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/CelestialBody/Star/"
-    }, 
+    },
     "CareerStation": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/CareerStation/"
-    }, 
+    },
     "Nerve": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/AnatomicalStructure/Nerve/"
-    }, 
+    },
     "Square": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Square/"
-    }, 
+    },
     "LaunchPad": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Infrastructure/LaunchPad/"
-    }, 
+    },
     "RadioHost": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Presenter/RadioHost/"
-    }, 
+    },
     "ChemicalCompound": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/ChemicalSubstance/ChemicalCompound/"
-    }, 
+    },
     "AutoRacingLeague": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/SportsLeague/AutoRacingLeague/"
-    }, 
+    },
     "Image": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Work/Document/Image/"
-    }, 
+    },
     "ChessPlayer": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Athlete/ChessPlayer/"
-    }, 
+    },
     "Event": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/Event/"
-    }, 
+    },
     "CricketTeam": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/SportsTeam/CricketTeam/"
-    }, 
+    },
     "Scientist": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/Scientist/"
-    }, 
+    },
     "Imdb": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/Imdb/"
-    }, 
+    },
     "BoxingLeague": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/SportsLeague/BoxingLeague/"
-    }, 
+    },
     "MetroStation": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Infrastructure/Station/MetroStation/"
-    }, 
+    },
     "Deity": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Agent/Deity/"
-    }, 
+    },
     "Mayor": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Politician/Mayor/"
-    }, 
+    },
     "Journalist": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/Journalist/"
-    }, 
+    },
     "geo:SpatialThing": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/geo:SpatialThing/"
-    }, 
+    },
     "Grape": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Species/Eukaryote/Plant/FloweringPlant/Grape/"
-    }, 
+    },
     "Swimmer": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Athlete/Swimmer/"
-    }, 
+    },
     "WaterPoloPlayer": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Athlete/WaterPoloPlayer/"
-    }, 
+    },
     "SoccerManager": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/SportsManager/SoccerManager/"
-    }, 
+    },
     "Swarm": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/Swarm/"
-    }, 
+    },
     "MixedMartialArtsEvent": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Event/SocietalEvent/SportsEvent/MixedMartialArtsEvent/"
-    }, 
+    },
     "Skyscraper": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Building/Skyscraper/"
-    }, 
+    },
     "Stadium": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/SportFacility/Stadium/"
-    }, 
+    },
     "ChristianDoctrine": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/TopicalConcept/TheologicalConcept/ChristianDoctrine/"
-    }, 
+    },
     "MicroRegion": {
-        "depth": 6, 
+        "depth": 6,
         "fullpath": "owl:Thing/Place/PopulatedPlace/Region/AdministrativeRegion/GovernmentalAdministrativeRegion/MicroRegion/"
-    }, 
+    },
     "Meeting": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Event/SocietalEvent/Meeting/"
-    }, 
+    },
     "ResearchProject": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/UnitOfWork/Project/ResearchProject/"
-    }, 
+    },
     "Fungus": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Species/Eukaryote/Fungus/"
-    }, 
+    },
     "Windmill": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Mill/Windmill/"
-    }, 
+    },
     "FormerMunicipality": {
-        "depth": 7, 
+        "depth": 7,
         "fullpath": "owl:Thing/Place/PopulatedPlace/Region/AdministrativeRegion/GovernmentalAdministrativeRegion/Municipality/FormerMunicipality/"
-    }, 
+    },
     "Hotel": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Building/Hotel/"
-    }, 
+    },
     "Polysaccharide": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Biomolecule/Polysaccharide/"
-    }, 
+    },
     "Regency": {
-        "depth": 6, 
+        "depth": 6,
         "fullpath": "owl:Thing/Place/PopulatedPlace/Region/AdministrativeRegion/GovernmentalAdministrativeRegion/Regency/"
-    }, 
+    },
     "Insect": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Species/Eukaryote/Animal/Insect/"
-    }, 
+    },
     "Boxer": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Athlete/Boxer/"
-    }, 
+    },
     "Letter": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/Letter/"
-    }, 
+    },
     "Artwork": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Work/Artwork/"
-    }, 
+    },
     "Device": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/Device/"
-    }, 
+    },
     "NaturalEvent": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Event/NaturalEvent/"
-    }, 
+    },
     "Painter": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Artist/Painter/"
-    }, 
+    },
     "BadmintonPlayer": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Athlete/BadmintonPlayer/"
-    }, 
+    },
     "MusicComposer": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Agent/Person/Artist/Writer/MusicComposer/"
-    }, 
+    },
     "Ideology": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/TopicalConcept/Ideology/"
-    }, 
+    },
     "ChartsPlacements": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/ChartsPlacements/"
-    }, 
+    },
     "Castle": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Building/Castle/"
-    }, 
+    },
     "Employer": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Agent/Employer/"
-    }, 
+    },
     "PlayWright": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Agent/Person/Artist/Writer/PlayWright/"
-    }, 
+    },
     "CoalPit": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/Mine/CoalPit/"
-    }, 
+    },
     "Surname": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Name/Surname/"
-    }, 
+    },
     "CultivatedVariety": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Species/Eukaryote/Plant/CultivatedVariety/"
-    }, 
+    },
     "MountainRange": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/NaturalPlace/MountainRange/"
-    }, 
+    },
     "Cleric": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/Cleric/"
-    }, 
+    },
     "RollerCoaster": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/AmusementParkAttraction/RollerCoaster/"
-    }, 
+    },
     "NationalSoccerClub": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Agent/Organisation/SportsTeam/SoccerClub/NationalSoccerClub/"
-    }, 
+    },
     "Name": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/Name/"
-    }, 
+    },
     "GraveMonument": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/Monument/GraveMonument/"
-    }, 
+    },
     "BusCompany": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/Company/BusCompany/"
-    }, 
+    },
     "Racecourse": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Place/SportFacility/RaceTrack/Racecourse/"
-    }, 
+    },
     "CyclingTeam": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/SportsTeam/CyclingTeam/"
-    }, 
+    },
     "NobleFamily": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Family/NobleFamily/"
-    }, 
+    },
     "Writer": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Artist/Writer/"
-    }, 
+    },
     "Cemetery": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Place/Cemetery/"
-    }, 
+    },
     "Lake": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Place/NaturalPlace/BodyOfWater/Lake/"
-    }, 
+    },
     "Philosopher": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/Philosopher/"
-    }, 
+    },
     "GolfTournament": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Event/SocietalEvent/SportsEvent/Tournament/GolfTournament/"
-    }, 
+    },
     "Organisation": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Agent/Organisation/"
-    }, 
+    },
     "River": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Place/NaturalPlace/BodyOfWater/Stream/River/"
-    }, 
+    },
     "Novel": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Work/WrittenWork/Book/Novel/"
-    }, 
+    },
     "PlayboyPlaymate": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/PlayboyPlaymate/"
-    }, 
+    },
     "FormulaOneRacing": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/SportsLeague/FormulaOneRacing/"
-    }, 
+    },
     "PrimeMinister": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Politician/PrimeMinister/"
-    }, 
+    },
     "GolfPlayer": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Athlete/GolfPlayer/"
-    }, 
+    },
     "FormulaOneTeam": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/SportsTeam/FormulaOneTeam/"
-    }, 
+    },
     "RecordLabel": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/Company/RecordLabel/"
-    }, 
+    },
     "Blazon": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/Blazon/"
-    }, 
+    },
     "BaseballSeason": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/SportsSeason/SportsTeamSeason/BaseballSeason/"
-    }, 
+    },
     "Diploma": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/Diploma/"
-    }, 
+    },
     "WaterwayTunnel": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Place/ArchitecturalStructure/Infrastructure/RouteOfTransportation/WaterwayTunnel/"
-    }, 
+    },
     "HandballTeam": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/SportsTeam/HandballTeam/"
-    }, 
+    },
     "AdultActor": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Agent/Person/Artist/Actor/AdultActor/"
-    }, 
+    },
     "Opera": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Work/MusicalWork/Opera/"
-    }, 
+    },
     "Street": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/PopulatedPlace/Street/"
-    }, 
+    },
     "Artery": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/AnatomicalStructure/Artery/"
-    }, 
+    },
     "Prefecture": {
-        "depth": 6, 
+        "depth": 6,
         "fullpath": "owl:Thing/Place/PopulatedPlace/Region/AdministrativeRegion/GovernmentalAdministrativeRegion/Prefecture/"
-    }, 
+    },
     "Jockey": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Athlete/Jockey/"
-    }, 
+    },
     "Boxing": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Activity/Sport/Boxing/"
-    }, 
+    },
     "PeriodOfArtisticStyle": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/TimePeriod/PeriodOfArtisticStyle/"
-    }, 
+    },
     "Country": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Place/PopulatedPlace/Country/"
-    }, 
+    },
     "CelestialBody": {
-        "depth": 1, 
+        "depth": 1,
         "fullpath": "owl:Thing/CelestialBody/"
-    }, 
+    },
     "RadioStation": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/Broadcaster/RadioStation/"
-    }, 
+    },
     "HorseRace": {
-        "depth": 5, 
+        "depth": 5,
         "fullpath": "owl:Thing/Event/SocietalEvent/SportsEvent/Race/HorseRace/"
-    }, 
+    },
     "Bodybuilder": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Athlete/Bodybuilder/"
-    }, 
+    },
     "HumanGene": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Biomolecule/Gene/HumanGene/"
-    }, 
+    },
     "Monument": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Place/Monument/"
-    }, 
+    },
     "HistoricalRegion": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Place/PopulatedPlace/Region/HistoricalRegion/"
-    }, 
+    },
     "Congressman": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Politician/Congressman/"
-    }, 
+    },
     "SpeedwayLeague": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Organisation/SportsLeague/SpeedwayLeague/"
-    }, 
+    },
     "Musical": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Work/Musical/"
-    }, 
+    },
     "SportFacility": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Place/SportFacility/"
-    }, 
+    },
     "Vicar": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Agent/Person/Cleric/Vicar/"
-    }, 
+    },
     "Coach": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/Coach/"
-    }, 
+    },
     "Archaea": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Species/Archaea/"
-    }, 
+    },
     "Presenter": {
-        "depth": 3, 
+        "depth": 3,
         "fullpath": "owl:Thing/Agent/Person/Presenter/"
-    }, 
+    },
     "Brain": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/AnatomicalStructure/Brain/"
-    }, 
+    },
     "Beverage": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Food/Beverage/"
-    }, 
+    },
     "CardinalDirection": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/TopicalConcept/CardinalDirection/"
-    }, 
+    },
     "Village": {
-        "depth": 4, 
+        "depth": 4,
         "fullpath": "owl:Thing/Place/PopulatedPlace/Settlement/Village/"
-    }, 
+    },
     "Bacteria": {
-        "depth": 2, 
+        "depth": 2,
         "fullpath": "owl:Thing/Species/Bacteria/"
     }
 }
