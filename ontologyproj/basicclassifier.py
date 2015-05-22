@@ -12,7 +12,7 @@ def getkeystring(entity):
 
 
 def getclasslabel(entity):
-    return entity["class"]
+    return entity["deepest"]
 
 
 def train(trainset):
@@ -30,11 +30,18 @@ def pipeline():
 def evalclassifier(trainsize, testsize):
     trainset, testset = retrieve.sets("owl:Thing", trainsize, testsize)
     classifier = train(trainset)
+    return test(classifier, testset)
 
+
+def predictions(classifier, testset):
     testdata = list(map(getkeystring, testset))
-    testtargets = list(map(getclasslabel, testset))
-
     predicted = classifier.predict(testdata)
+    return predicted
+
+
+def test(classifier, testset):
+    testtargets = list(map(getclasslabel, testset))
+    predicted = predictions(classifier, testset)
     return np.mean(predicted == testtargets)
 
 

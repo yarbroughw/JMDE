@@ -1,12 +1,16 @@
+from __future__ import print_function
 import json
+import warnings
 import retrieve
 import pickle
-import numpy as np
+import itertools
 
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.pipeline import Pipeline
+
+import scipy.optimize as opt
 
 
 class Node:
@@ -14,24 +18,23 @@ class Node:
         self.name = n
         self.children = {}
         self.pipeline = pipeline
-        self.threshold = 0.05
+        self.threshold = 0.00
 
     def hasChildren(self):
         return self.children != dict()
 
-    def getsets(self, trainnum, testnum):
-        print(self.name, "node gathering sets.")
-        trainset, testset = retrieve.sets(self.name, trainnum, testnum)
-        self.trainset = trainset
-        self.testset = testset
+    def getset(self, amount):
+        return list(retrieve.entities(amount, self.name))
 
-    def train(self):
-        if not self.trainset:
-            print(self.name + "'s training set not initialized!")
+    def train(self, entities):
+        if not entities:
             return
-        corpus = features(self.trainset)
-        target = labels(self.trainset)
-        self.pipeline = self.pipeline.fit(corpus, target)
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore")
+            corpus = features(entities)
+            target = labels(entities)
+            self.pipeline = self.pipeline.fit(corpus, target)
+            assert hasattr(self.pipeline.steps[0][1], "vocabulary_")
 
     def test(self):
         if not self.testset:
@@ -42,57 +45,52 @@ class Node:
         return self.pipeline.score(corpus, target)
 
     def predict(self, x):
-        ''' take an entity and classify it into child nodes '''
+        ''' take an entity and classify it into either a child node (if
+        confident about prediction) or self (if unconfident)
+        '''
         fs = features([x])
-        prediction = {"label": self.pipeline.predict(fs)[0],
-                      "proba": max(self.pipeline.predict_proba(fs)[0])}
-        return prediction
+        proba = max(self.pipeline.predict_proba(fs)[0])
+        if proba < self.threshold:
+            label = self.name
+        else:
+            label = self.pipeline.predict(fs)[0]
+        return label
 
-    def confidence(self, entity):
-        getkeystring = lambda x: ' '.join(x["properties"])
-        vector = getkeystring(entity)
-        return np.amax(self.pipeline.predict_proba(vector))
-
-    def emptychildren(self):
-        ''' returns list of untrained children '''
-        empties = []
-        for name, child in self.children.items():
-            if not hasattr(child.pipeline.steps[0][1], "vocabulary_"):
-                empties.append(name)
-        return empties
-
-    def trained(self):
+    def isTrained(self):
         return hasattr(self.pipeline.steps[0][1], "vocabulary_")
 
     def distance(self, predicted, label):
-        ''' distance function for optimization of node thresholds.
-        correct classification is a 1, withholded classification is a 0,
-        and misclassification is a -1
+        ''' error function for optimization of node thresholds.
+        correct classification is a 0, withholded classification is a 1,
+        and misclassification is a 2
         '''
         if predicted == label:
-            return 1
-        elif predicted == self.name:
             return 0
+        elif predicted == self.name:
+            return 1
         else:
-            return -1
+            return 2
 
-    def score(self):
-        # TODO: add files from class
-        entities = retrieve.entities(100, self.name)
-        return sum([self.distance(self.predict(e), e["class"])
-                    for e in entities])
+    def score(self, threshold):
+        ''' gets entities from this node and its children, to score how
+            well the node classifies the entities (using "distance")
+        '''
+        self.threshold = threshold
+        total = sum([self.distance(self.predict(e), e["class"])
+                    for e in self.testset])
+        return total / len(self.testset)
 
     def learnthreshold(self):
-        self.threshold = 0
-        current = self.score()
-        rightscore = current - 1
-
-        # move right until going right is worse (TODO: debug?)
-        while rightscore > current:
-            self.threshold += 0.05
-            current = rightscore
-            rightscore = self.score()
-        self.threshold -= 0.05
+        print("loading test set.")
+        self.testset = list(itertools.chain(retrieve.direct(100, self.name),
+                                            retrieve.entities(200, self.name)))
+        print("optimizing.")
+        result = opt.minimize_scalar(self.score,
+                                     bounds=(0.0, 1.0),
+                                     method='bounded')
+        print(result)
+        self.threshold = result.x
+        print(self.name, "threshold set to", self.threshold)
 
 
 class TreeClassifier:
@@ -126,33 +124,49 @@ class TreeClassifier:
             queue.extend(list(current.children.values()))
             yield current
 
-    def train(self, trainnum, testnum):
+    def train(self, entities):
         ''' train each node's classifier '''
         for node in iter(self):
             print("Training", node.name)
-            node.getsets(trainnum, testnum)
-            node.train()
-            node.trainset = []
-        self.emptynodes = [marked for node in iter(self)
-                           for marked in node.emptychildren()]
+            node.train(entities)
+
+    def autotrain(self, amount):
+        ''' train each node's classifier '''
+        for node in iter(self):
+            entities = node.getset(amount)
+            node.train(entities)
 
     def learnthresholds(self):
         for node in iter(self):
-            node.learnthreshold()
+            if node.isTrained():
+                print("learning threshold for", node.name, end='. ')
+                node.learnthreshold()
 
     def predict(self, entity):
         ''' returns predicted classes for entity.
         predicts downwards in tree from root node
         '''
         node = self.root
-        print(entity["name"], "actually is a", entity["fullpath"])
-        while node.hasChildren() and node.trained():
-            prediction = node.predict(entity)
-            if prediction["proba"] < node.threshold:
+        while node.hasChildren() and node.isTrained():
+            predicted_label = node.predict(entity)
+            if predicted_label == node.name:
                 break
-            print(entity["name"], "is a", prediction["label"],
-                  prediction["proba"])
-            node = node.children[prediction["label"]]
+            node = node.children[predicted_label]
+        return node.name
+
+    def predictions(self, entities):
+        ''' runs predict function ovr set of entities '''
+        for entity in entities:
+            self.predict(entity)
+
+    def score(self, entities):
+        total = 0
+        for entity in entities:
+            realclass = entity["deepest"]
+            predicted = self.predict(entity)
+            if predicted == realclass:
+                total += 1
+        return total / len(entities)
 
 
 def features(dataset):
@@ -177,6 +191,10 @@ def dump(trainnum, testnum, filename):
     tree.train(trainnum, testnum)
     with open(filename, 'wb') as f:
         pickle.dump(tree, f)
+
+
+def learnthresholds():
+    pass
 
 
 def load(filename):

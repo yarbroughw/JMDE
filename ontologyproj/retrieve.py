@@ -34,6 +34,7 @@ def entitygenerator(category):
 
         # class is intersection of entity's classes and subclasses of category
         entity["class"] = (childnames & set(classes)).pop()
+        entity["deepest"] = classes[-1]
         entity["fullpath"] = '/'.join(classes)
         yield entity
 
@@ -62,8 +63,6 @@ def entities(amount, category):
     '''
     g = entitygenerator(category)
     for i, entity in zip(range(amount), g):
-        if i == amount:
-            return
         yield entity
 
 
@@ -75,9 +74,10 @@ def direct(amount, category):
         category_path = flatontology[category]["fullpath"]
 
     filenames = [f for f in os.listdir("../data/" + category_path)
-                 if f != "fileindex.json"]
+                 if f != "fileindex.json"
+                 and os.path.isfile("../data/" + category_path + f)]
 
-    for filename in filenames:
+    for _, filename in zip(range(amount), filenames):
         with open("../data/" + category_path + filename, 'r') as f:
             entity = ujson.load(f)
             entity["class"] = category

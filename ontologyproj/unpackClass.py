@@ -5,6 +5,7 @@
 from __future__ import print_function
 import json
 import csv
+import glob
 from itertools import count
 
 ontologyprefix = "http://dbpedia.org/ontology/"
@@ -12,6 +13,7 @@ resourceprefix = "http://dbpedia.org/resource/"
 itemprefix = "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
 with open("../data/flatontology.json", 'r') as flat:
     ontology = json.load(flat)
+ontology_labels = list(ontology.keys())
 
 
 def toName(url):
@@ -24,7 +26,7 @@ def csvinstances(path, skip=1):
         labelURIs = next(dicts)     # field label URIs
         next(dicts)     # field types      (unneeded)
         next(dicts)     # field type URIs  (unneeded)
-        for i, instance in zip(count(), dicts):
+        for i, instance in zip(count(start=0), dicts):
             if i % skip == 0:
                 yield cleanCSVinstance(instance, labelURIs)
 
@@ -41,8 +43,11 @@ def cleanCSVinstance(instance, labeldict):
 
     typelabel = "22-rdf-syntax-ns#type"
     newinstance[typelabel] = tolist(instance[typelabel])
-    newinstance["name"] = instance["rdf-schema#label"]
-    newinstance["URI"] = instance["URI"]
+
+    uri = instance["URI"]
+    newinstance["URI"] = uri
+    newinstance["name"] = uri[len(resourceprefix):].replace('/', '-')
+
     return newinstance
 
 
@@ -88,7 +93,9 @@ def getProperties(instance):
 def getOntologies(instance):
     ''' construct list of ontology refs in instance '''
     ontologyrefs = instance["22-rdf-syntax-ns#type"]
-    return [x for x in ontologyrefs if x.startswith(ontologyprefix)]
+    return [x for x in ontologyrefs
+            if x.startswith(ontologyprefix)
+            and x[len(ontologyprefix):] in ontology_labels]
 
 
 def getFinestOntology(refs):
@@ -126,6 +133,33 @@ def addToIndex(entity, dest, path):
         json.dump(index,  f,  indent=4)
 
 
+def unpackAll():
+    # load progress file
+    with open("../data/csv/progress.json", 'r') as f:
+        progress = set(json.load(f))
+
+    files = glob.glob("../data/csv/*.csv")
+    files = set(map(lambda x: x.split('/')[-1], files))
+
+    remaining = files - progress
+
+    for x in remaining:
+        print("Unpacking", x, "...")
+        instances = csvinstances("../data/csv/" + x, skip=500)
+        writeInstances(instances, "../data/")
+        progress.add(x)
+        with open("../data/csv/progress.json", 'w') as f:
+            json.dump(list(progress), f)
+
+
+def unpack(x, skip=1):
+    x = x + ".csv"
+    instances = csvinstances("../data/csv/" + x, skip=skip)
+    writeInstances(instances, "../data/")
+
 if __name__ == "__main__":
-    instances = csvinstances("/Users/will/Desktop/Brewery.csv")
-    writeInstances(instances, "../mockdata/")
+    unpack("Food", 1)
+    unpack("Sales", 1)
+    unpack("Holiday", 1)
+    unpack("Colour", 1)
+    unpack("Biomolecule", 10)

@@ -26,21 +26,22 @@ class LexicalMatcher:
         properties = list(document.keys())
         return self.closestclass(properties)
 
+    def classifyset(self, entities):
+        for entity in entities:
+            self.classify(entity["properties"])
+
+    def score(self, documents):
+        total = 0
+        for entity in documents:
+            props = entity["properties"]
+            guessed = self.classify(props)
+            if guessed == entity["deepest"]:
+                total += 1
+        return total / len(documents)
+
 
 if __name__ == "__main__":
-
-    entitycount = 1000
-
+    print("testing matcher for 1000 entities")
     matcher = LexicalMatcher()
-    entities = retrieve.entities(entitycount, "owl:Thing")
-    total = 0
-
-    for entity in entities:
-        props = entity["properties"]
-        print("checking", entity["name"])
-        guessed = matcher.classify(props)
-        if guessed == entity["class"]:
-            total += 1
-
-    correctratio = total / entitycount
-    print(correctratio, "of the entities guessed correctly.")
+    entities = retrieve.entities(1000, "owl:Thing")
+    matcher.score(list(entities))

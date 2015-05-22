@@ -7,7 +7,7 @@ import os
 
 def makedirectories(ontologyDict):
     for value in ontologyDict:
-        directory = "../mockdata/" + value["fullpath"]
+        directory = "../data/" + value["fullpath"]
         print("making directory", directory, " ...", end='')
         os.mkdir(directory)
         with open(directory+"/fileindex.json", 'a') as indexfile:
