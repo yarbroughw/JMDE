@@ -11,6 +11,8 @@ except ImportError:
 with open('README.md') as readme_file:
     readme = readme_file.read()
 
+history = ""
+
 requirements = [
     # TODO: put package requirements here
 ]
