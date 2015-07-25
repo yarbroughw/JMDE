@@ -193,10 +193,6 @@ def dump(trainnum, testnum, filename):
         pickle.dump(tree, f)
 
 
-def learnthresholds():
-    pass
-
-
 def load(filename):
     with open(filename, 'rb') as f:
         tree = pickle.load(f)
