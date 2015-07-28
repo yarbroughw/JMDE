@@ -7,17 +7,17 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.pipeline import Pipeline
 
 
-def getkeystring(entity):
-    return ' '.join(entity["properties"])
+def getkeystrings(dataset):
+    return [ ' '.join(entity["properties"]) for entity in dataset ]
 
 
-def getclasslabel(entity):
-    return entity["deepest"]
+def getclasslabels(dataset):
+    return [ entity["deepest"] for entity in dataset ]
 
 
 def train(trainset):
-    corpus = list(map(getkeystring, trainset))
-    target = list(map(getclasslabel, trainset))
+    corpus = getkeystrings(trainset)
+    target = getclasslabels(trainset)
     return pipeline().fit(corpus, target)
 
 
@@ -34,13 +34,13 @@ def evalclassifier(trainsize, testsize):
 
 
 def predictions(classifier, testset):
-    testdata = list(map(getkeystring, testset))
+    testdata = getkeystrings(testset)
     predicted = classifier.predict(testdata)
     return predicted
 
 
 def test(classifier, testset):
-    testtargets = list(map(getclasslabel, testset))
+    testtargets = getclasslabels(testset)
     predicted = predictions(classifier, testset)
     return np.mean(predicted == testtargets)
 
