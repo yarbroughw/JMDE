@@ -169,13 +169,11 @@ class TreeClassifier:
 
 
 def features(dataset):
-    getkeystring = lambda x: ' '.join(x["properties"])
-    return list(map(getkeystring, dataset))
+    return [ ' '.join(x["properties"]) for x in dataset]
 
 
 def labels(dataset):
-    getclassname = lambda x: x["class"]
-    return list(map(getclassname, dataset))
+    return [ x["class"] for x in dataset ]
 
 
 def pipeline():
