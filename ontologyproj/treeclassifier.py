@@ -1,16 +1,15 @@
 from __future__ import print_function
 import json
 import warnings
-import retrieve
 import pickle
 import itertools
-
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.pipeline import Pipeline
-
 import scipy.optimize as opt
+
+import retrieve
 
 
 class Node:
