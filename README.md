@@ -1,4 +1,4 @@
-JMDE -- JSON Metadata Discovery Engine
+The JSON Metadata Discovery Engine
 ===============================
 
 JMDE is the outcome of my undergraduate thesis work. It takes an arbitrary JSON
