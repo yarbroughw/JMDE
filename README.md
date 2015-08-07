@@ -20,7 +20,7 @@ prototype form will require the following (at least):
 Why?
 ----
 This was borne from experimental research, so don't ask me for *too* much
-concrete real-world application. However, ontology metadata is very important
+concrete real-world application. However, ontology-based semantic metadata is very important
 for linked data applications, and the popularity of JSON warrants the creation
 of more tools that support this kind of metadata.
 
