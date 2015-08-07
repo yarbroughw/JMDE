@@ -22,23 +22,23 @@ test_requirements = [
 ]
 
 setup(
-    name='ontologyproj',
+    name='JMDE',
     version='0.1.0',
     description="Undergraduate thesis -- json to json-ld translation using machine learning and the DBpedia dataset.",
     long_description=readme + '\n\n' + history,
     author="Willem Yarbrough",
     author_email='yarbroughw@allegheny.edu',
-    url='https://github.com/yarbroughw/ontologyproj',
+    url='https://github.com/yarbroughw/JMDE',
     packages=[
-        'ontologyproj',
+        'JMDE',
     ],
-    package_dir={'ontologyproj':
-                 'ontologyproj'},
+    package_dir={'JMDE':
+                 'JMDE'},
     include_package_data=True,
     install_requires=requirements,
     license="BSD",
     zip_safe=False,
-    keywords='ontologyproj',
+    keywords='JMDE',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',

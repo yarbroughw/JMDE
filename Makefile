@@ -35,7 +35,7 @@ clean-test:
 	rm -fr htmlcov/
 
 lint:
-	flake8 ontologyproj tests
+	flake8 JMDE tests
 
 test:
 	python setup.py test
@@ -44,15 +44,15 @@ test-all:
 	tox
 
 coverage:
-	coverage run --source ontologyproj setup.py test
+	coverage run --source JMDE setup.py test
 	coverage report -m
 	coverage html
 	open htmlcov/index.html
 
 docs:
-	rm -f docs/ontologyproj.rst
+	rm -f docs/JMDE.rst
 	rm -f docs/modules.rst
-	sphinx-apidoc -o docs/ ontologyproj
+	sphinx-apidoc -o docs/ JMDE
 	$(MAKE) -C docs clean
 	$(MAKE) -C docs html
 	open docs/_build/html/index.html
