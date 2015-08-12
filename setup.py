@@ -24,8 +24,8 @@ test_requirements = [
 setup(
     name='JMDE',
     version='0.1.0',
-    description="Undergraduate thesis -- json to json-ld translation using machine learning and the DBpedia dataset.",
-    long_description=readme + '\n\n' + history,
+    description="The Glorious JSON Metadata Discovery Engine",
+    long_description=readme,
     author="Willem Yarbrough",
     author_email='yarbroughw@allegheny.edu',
     url='https://github.com/yarbroughw/JMDE',
@@ -36,9 +36,9 @@ setup(
                  'JMDE'},
     include_package_data=True,
     install_requires=requirements,
-    license="BSD",
+    license="MIT",
     zip_safe=False,
-    keywords='JMDE',
+    keywords='JMDE metadata JSON-LD JSON',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
