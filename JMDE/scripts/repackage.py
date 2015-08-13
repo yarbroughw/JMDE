@@ -17,6 +17,8 @@ have the time!
 import json
 import os
 
+prefix = "http://dbpedia.org/ontology/"
+
 def getFile(path):
     ''' gets the contents of a json file. '''
     with open("../../data/" + path) as f:
@@ -33,6 +35,10 @@ def getPaths(num=None):
     else:
         return [ path for path, i in zip(values, range(num)) ]
 
+def clean(classname):
+    ''' Remove prefix from a class name. '''
+    return classname[len(prefix):]
+
 def main(debug=False):
     num = 2 if debug else None
 
@@ -43,4 +49,13 @@ def main(debug=False):
     exists = lambda path: os.path.exists("../../data/" + path)
     instances = [ getFile(path) for path in filepaths if exists(path)]
 
-    print(json.dumps(instances, indent=4))
+    # rename and clean classes list for good measure :)
+    for instance in instances:
+        classes = instance.pop("ontologies")
+        instance["classes"] = [ clean(class_) for class_ in classes ]
+
+    if debug:
+        print(json.dumps(instances, indent=4))
+    else:
+        with open("instances.json", 'w') as f:
+            json.dump(instances, f)
