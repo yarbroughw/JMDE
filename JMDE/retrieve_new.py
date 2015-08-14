@@ -3,6 +3,7 @@
 import json
 
 def instances():
+    ''' Loads and returns dataset of instances. '''
     with open("../data/instances.json") as f:
         return json.load(f)
 
