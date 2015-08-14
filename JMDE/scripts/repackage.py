@@ -16,6 +16,7 @@ have the time!
 
 import json
 import os
+from itertools import count
 
 prefix = "http://dbpedia.org/ontology/"
 
@@ -39,7 +40,35 @@ def clean(classname):
     ''' Remove prefix from a class name. '''
     return classname[len(prefix):]
 
-def main(debug=False):
+def properties(instance):
+    ''' Gets list of property labels from instance. '''
+    return list(instance["properties"].keys())
+
+def deepest_class(ontology, classes):
+    ''' Returns deepest class from list of classes. '''
+    depth = lambda class_: ontology[class_]["depth"]
+    return max(classes, key=depth)
+
+def compress(ontology, instance):
+    ''' Returns smaller form of instance with just
+    properties and deepest subsuming class.
+    '''
+    return { "properties": properties(instance),
+             "class"     : deepest_class(ontology, instance["classes"])
+           }
+
+def compress_instances():
+    ''' Returns instances dataset with each instance in smaller
+    form, with just properties and deepest subsuming class.
+    '''
+    with open("../../data/flatontology.json") as f:
+        ontology  = json.load(f)
+    with open("../../data/instances.json") as f:
+        instances = json.load(f)
+
+    return [compress(ontology, instance) for instance in instances]
+
+def repackage(debug=False):
     num = 2 if debug else None
 
     # get paths from fileindex
