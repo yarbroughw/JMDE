@@ -49,7 +49,7 @@ def deepest_class(ontology, classes):
     depth = lambda class_: ontology[class_]["depth"]
     return max(classes, key=depth)
 
-def compress(ontology, instance):
+def simplify(ontology, instance):
     ''' Returns smaller form of instance with just
     properties and deepest subsuming class.
     '''
@@ -57,7 +57,7 @@ def compress(ontology, instance):
              "class"     : deepest_class(ontology, instance["classes"])
            }
 
-def compress_instances():
+def simplify_instances():
     ''' Returns instances dataset with each instance in smaller
     form, with just properties and deepest subsuming class.
     '''
@@ -66,7 +66,7 @@ def compress_instances():
     with open("../../data/instances.json") as f:
         instances = json.load(f)
 
-    return [compress(ontology, instance) for instance in instances]
+    return [simplify(ontology, instance) for instance in instances]
 
 def repackage(debug=False):
     num = 2 if debug else None

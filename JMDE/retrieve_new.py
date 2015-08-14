@@ -7,10 +7,10 @@ def instances():
     with open("../data/instances.json") as f:
         return json.load(f)
 
-def compressed_instances():
+def simple_instances():
     ''' Loads and returns dataset of instances, where the instances
     have been simplified to just property labels and class name.
     See the scripts/repackage.py for more details.
     '''
-    with open("../data/compressed_instances.json") as f:
+    with open("../data/simple_instances.json") as f:
         return json.load(f)
