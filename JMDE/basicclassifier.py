@@ -75,3 +75,7 @@ def kfold_eval():
 
 def main():
     print(kfold_eval())
+
+
+if __name__ == "__main__":
+    main()
