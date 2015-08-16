@@ -1,10 +1,7 @@
 import retrieve_new
+import pipeline
 
 import numpy as np
-from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.feature_extraction.text import TfidfTransformer
-from sklearn.naive_bayes import MultinomialNB
-from sklearn.pipeline import Pipeline
 from sklearn import cross_validation
 
 
@@ -16,11 +13,7 @@ class BasicClassifier:
         ''' Constructs pipeline, and trains itself if corpus and
         target params are set.
         '''
-        vectorizer  = ('vect',  CountVectorizer())
-        transformer = ('tfidf', TfidfTransformer())
-        classifier  = ('clf',   MultinomialNB())
-        self.pipeline = Pipeline([vectorizer, transformer, classifier])
-
+        self.pipeline = pipeline.default()
         if corpus is not None and target is not None:
             self.train(corpus, target)
 
