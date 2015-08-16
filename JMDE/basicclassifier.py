@@ -21,7 +21,7 @@ class BasicClassifier:
         classifier  = ('clf',   MultinomialNB())
         self.pipeline = Pipeline([vectorizer, transformer, classifier])
 
-        if corpus and target:
+        if corpus is not None and target is not None:
             self.train(corpus, target)
 
     def train(self, corpus, target):
@@ -59,9 +59,16 @@ def evalclassifier(test_ratio):
     return classifier.test(test_corpus, test_labels)
 
 
-def main():
-    sizes = [0.1, 0.2, 0.3, 0.4, 0.5]
+def kfold_eval():
+    corpus, target = retrieve_new.dataset()
+    corpus, target = np.array(corpus), np.array(target)
+    fold_indices = cross_validation.KFold(len(corpus), n_folds=5)
 
-    for i, size in enumerate(sizes):
-        print("Trial", i+1)
-        print("\nAccuracy:", evalclassifier(size), "\n")
+    for train, test in fold_indices:
+        train_corpus, train_labels = corpus[train], target[train]
+        test_corpus,  test_labels  = corpus[test],  target[test]
+        classifier = BasicClassifier(train_corpus, train_labels)
+        return classifier.test(test_corpus, test_labels)
+
+def main():
+    print(kfold_eval())
