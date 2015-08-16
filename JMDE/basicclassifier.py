@@ -44,9 +44,11 @@ def keystrings(entities):
 def class_labels(instances):
     return [ instance["class"] for instance in instances ]
 
+
 def split_dataset(ratio):
     corpus, target = retrieve_new.dataset()
     return cross_validation.train_test_split(corpus, target, test_size=ratio)
+
 
 def evalclassifier(test_ratio):
     split = split_dataset(test_ratio)
@@ -69,6 +71,7 @@ def kfold_eval():
         test_corpus,  test_labels  = corpus[test],  target[test]
         classifier = BasicClassifier(train_corpus, train_labels)
         return classifier.test(test_corpus, test_labels)
+
 
 def main():
     print(kfold_eval())
